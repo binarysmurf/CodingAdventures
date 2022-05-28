@@ -28,8 +28,8 @@ alias cls='clear'
 alias cat='bat'
 alias pe='printenv | sort'
 alias clds='find . -name ".DS_Store" -delete'
-alias cl="find . -name ".updatedone" | -delete"
-
+alias clud='find . -name ".updatedone" -delete'
+alias cll='find . -name ".localized" -delete'
 
 alias showhf='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder'
 alias hidehf='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder'
@@ -59,6 +59,9 @@ alias gs='google-search.sh'
 alias uv='upscale.sh'
 alias ic='imgcat.sh'
 alias icat='imgcat.sh'
+
+alias cdf='cp .steve_aliases.sh ~/Geekery/Github/CodingAdventures/Zsh/myDotFiles; cp .zshrc ~/Geekery/Github/CodingAdventures/Zsh/myDotFiles; cp .steve_functions.sh ~/Geekery/Github/CodingAdventures/Zsh/myDotFiles'
+
 
 # Python 3.x
 
