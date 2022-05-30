@@ -40,5 +40,4 @@ rm *.$1
 echo "Removed any unrequired audio files. 😳🤞🏼"
 echo "Done."
 
-echo "*** SACM out! 🫳🏼 🎤 ***"
-exit 0
+echo "*** SACM out! 🫳🏼🎤 ***"
