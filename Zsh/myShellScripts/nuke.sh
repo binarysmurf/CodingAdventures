@@ -29,8 +29,8 @@ then
     rm -rf ~/Scratch\ Directory/*
 fi
 
-if  [ "$( ls -a /Users/stevie/Documents/Screenshots/)" ]; # Are you fucking slow?
+if  [ "$( ls -a /Users/stevie/Geekery/Screenshots/)" ]; # Are you fucking slow?
 then
-    rm -rf ~/Documents/Screenshots/*
+    rm -rf ~/Geekery/Screenshots/*
 fi
 
