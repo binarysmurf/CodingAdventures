@@ -10,11 +10,10 @@ alias la='colorls -la --sd'
 
 alias hd='cd;clear'
 alias sd='cd ~/Scratch\ Directory;clear'
-alias dx='cd ~/Documents;clear'
+alias dx='cd ~/Library/Mobile\ Documents/com~apple~CloudDocs/Documents;clear'
 alias dk='cd ~/Desktop;clear'
 alias dl='cd ~/Downloads;clear'
 alias bd='cd ~/.bin;clear'
-alias dsd='cd ~/Geekery/Dropbox/Scratch\ Directory;clear'
 
 alias hg='history | grep'
 alias ag='alias | grep'
@@ -61,7 +60,7 @@ alias ic='imgcat.sh'
 alias icat='imgcat.sh'
 
 alias cdf='cp .steve_aliases.sh ~/Geekery/Github/CodingAdventures/Zsh/myDotFiles; cp .zshrc ~/Geekery/Github/CodingAdventures/Zsh/myDotFiles; cp .steve_functions.sh ~/Geekery/Github/CodingAdventures/Zsh/myDotFiles'
-
+alias css='cp ~/.bin/*.sh ~/Geekery/Github/CodingAdventures/Zsh/myShellScripts/'
 
 # Python 3.x
 

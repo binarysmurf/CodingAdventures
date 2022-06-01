@@ -8,12 +8,12 @@ echo "*** Stevie's Video Conversion McFuck (SVCM) version 1.2 ***"
 # check correct args
 
 if (($# < 1)); then
-    echo "*** Please supply an input video format to convert to MP4 .. E.g. 'convert2mp4 avi' or 'convert2mp4  mov'."
+    echo "*** Please supply an input video format to convert to MP4 .. E.g. 'convert2mp4 avi' or 'convert2mp4 mov'."
     exit 99
 fi
 
 if [[ ($1 = "mkv") || ($1 = "MKV") ]]; then
-	echo "\nIt may be better to repackge these videos. See repackage2mp4.sh.\n"
+	echo "\nIt may be better to repackage these videos. See repackage2mp4.sh.\n"
 	exit 99
 fi
 
@@ -45,5 +45,5 @@ rm *.log
 echo "Removed unrequired videos and logs. 😳🤞🏼"
 echo "Done."
 
-echo "*** SVCM out! 🫳🏼 🎤 ***"
+echo "*** SVCM out! 🫳  🎤 ***"
 exit 0

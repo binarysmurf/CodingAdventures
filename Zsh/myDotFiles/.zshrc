@@ -1,4 +1,6 @@
 setopt PROMPT_SUBST
+setopt rmstarsilent
+
 autoload -U promptinit && promptinit
 PROMPT='%(?.%F{green}√.%F{blue}?%?)%f %B%F{yellow}%~%f%b %B>%b '
 RPROMPT='%*'
@@ -30,7 +32,6 @@ export PATH="/Users/stevie/.bin:$PATH" # My own scripts,
 # Don't ask me what this does. It cleans up your $PATH enviroment variable via some black magic fuckery.
 
 export PATH="$(perl -e 'print join(":", grep { not $seen{$_}++ } split(/:/, $ENV{PATH}))')"
-setopt rmstarsilent
 
 # My personal aliases and functions.
 
