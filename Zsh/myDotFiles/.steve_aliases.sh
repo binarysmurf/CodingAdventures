@@ -51,7 +51,7 @@ alias mount_efiSSD='sudo mkdir /Volumes/EFI_SSD; sudo mount -t msdos /dev/disk1s
 
 alias nuke='nuke.sh'
 alias c2v="convert2mp4.sh"
-alias rv="repackage2mp4.sh"
+alias rp="repackage2mp4.sh"
 alias ca="convert2aac.sh"
 alias gic='generateIcons.sh'
 alias gs='google-search.sh'
@@ -59,7 +59,7 @@ alias uv='upscale.sh'
 alias ic='imgcat.sh'
 alias icat='imgcat.sh'
 
-alias cdf='cp .steve_aliases.sh ~/Geekery/Github/CodingAdventures/Zsh/myDotFiles; cp .zshrc ~/Geekery/Github/CodingAdventures/Zsh/myDotFiles; cp .steve_functions.sh ~/Geekery/Github/CodingAdventures/Zsh/myDotFiles'
+alias cdf='cp ~/.steve_aliases.sh ~/Geekery/Github/CodingAdventures/Zsh/myDotFiles; cp ~/.zshrc ~/Geekery/Github/CodingAdventures/Zsh/myDotFiles; cp ~/.steve_functions.sh ~/Geekery/Github/CodingAdventures/Zsh/myDotFiles'
 alias css='cp ~/.bin/*.sh ~/Geekery/Github/CodingAdventures/Zsh/myShellScripts/'
 
 # Python 3.x
