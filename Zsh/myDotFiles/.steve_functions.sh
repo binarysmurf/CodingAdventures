@@ -17,7 +17,7 @@ up () {
   fi
 }
 
-updateHomebrew ()
+WeeklyUpdate()
 {
 
 #
@@ -34,8 +34,9 @@ updateHomebrew ()
 		if [ -f ~/.updatedone ]; then # Have we previously updated today? Exit!
 			return
 		else						# Otherwise, do the update.. 
-		    echo "Yo Stevie!! Doing the weekly Homebrew update ..."
-		    brew update; brew upgrade; brew doctor
+		    echo "Yo Stevie!! Doing the weekly Homebrew update, and deleting local snapshots ..."
+		    brew update; brew upgrade; brew cleanup --prune=all; brew doctor
+		    tmutil deletelocalsnapshots /Volumes/Internal\ HD
 		    touch ~/.updatedone # .. and create a file to stop a repeat update.
 		fi
 	fi

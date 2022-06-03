@@ -38,8 +38,8 @@ export PATH="$(perl -e 'print join(":", grep { not $seen{$_}++ } split(/:/, $ENV
 source ~/.steve_aliases.sh
 source ~/.steve_functions.sh
 
-# Umm .. Update Homebrew?
-updateHomebrew
+# Update Homebrew and delete local snapshots
+WeeklyUpdate
 
 # zsh plugins
 
