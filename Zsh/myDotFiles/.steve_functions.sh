@@ -21,7 +21,7 @@ WeeklyUpdate()
 {
 
 #
-# This function updates my package manager & relevant packages weekly on a Sunday, and only once runs once rather than 
+# This function updates my package manager & relevant packages weekly on a Sunday, and only runs once rather than 
 # every time I open a terminal that day.
 #
 
@@ -30,11 +30,11 @@ WeeklyUpdate()
 	wday=$(date "+%a")  
 
 	
-	if [[ $wday == Sun ]]; then # Is it Sunday?
+	if [[ ($wday == Sun) || ($1 == force) ]]; then # Is it Sunday, or am I forcing an update?
 		if [ -f ~/.updatedone ]; then # Have we previously updated today? Exit!
 			return
 		else						# Otherwise, do the update.. 
-		    echo "Yo Stevie!! Doing the weekly Homebrew update, and deleting local snapshots ..."
+		    echo "Yo Stevie!! Doing the weekly Homebrew update, and deleting local snapshots ...\n"
 		    brew update; brew upgrade; brew cleanup --prune=all; brew doctor
 		    tmutil deletelocalsnapshots /Volumes/Internal\ HD
 		    touch ~/.updatedone # .. and create a file to stop a repeat update.
@@ -49,7 +49,5 @@ WeeklyUpdate()
 			rm ~/.updatedone
 		fi
 	fi
-
-	return
 	
 }
