@@ -51,7 +51,7 @@ alias mount_efiSSD='sudo mkdir /Volumes/EFI_SSD; sudo mount -t msdos /dev/disk1s
 
 alias nuke='nuke.sh'
 alias c2v="convert2mp4.sh"
-alias rp="repackage2mp4.sh"
+alias rv="repackage2mp4.sh"
 alias ca="convert2aac.sh"
 alias gic='generateIcons.sh'
 alias gs='google-search.sh'
