@@ -21,7 +21,6 @@ export LDFLAGS="-L/usr/local/opt/ruby/lib"
 export CPPFLAGS="-I/usr/local/opt/ruby/include"
 export PATH="/usr/local/opt/ruby/bin:$PATH"
 export PATH="/usr/local/lib/ruby/gems/3.1.0/bin:$PATH"
-# export PATH="/Users/stevie/Library/Python/3.10:$PATH"
 export PATH="/usr/local/Cellar/python@3.10/3.10.4/bin:$PATH"
 
 # General modifications to $PATH environment variable.
