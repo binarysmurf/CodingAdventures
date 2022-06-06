@@ -1,4 +1,4 @@
-# My aliases: Feb - May 2022. By Steve. So fuck off. 😀
+# My aliases: Feb - Jun 2022. By Steve. So fuck off. 😀
 
 # Directory navigation and related aliases.
 
@@ -43,7 +43,13 @@ alias root_off='sudo defaults write /Library/Preferences/com.apple.loginwindow S
 alias root_on='sudo defaults write /Library/Preferences/com.apple.loginwindow SHOWOTHERUSERS_MANAGED -bool TRUE'
 alias oa='open -a'
 alias op='open -a Preview'
+
+# Editors.
+
 alias mc='micro'
+alias nv='nvim'
+alias bb='bbedit'
+
 alias gl='glances -2'
 
 alias mount_efiHDD='sudo mkdir /Volumes/EFI_HDD; sudo mount -t msdos /dev/disk0s1 /Volumes/EFI_HDD'
@@ -58,6 +64,7 @@ alias gs='google-search.sh'
 alias uv='upscale.sh'
 alias ic='imgcat.sh'
 alias icat='imgcat.sh'
+alias mp='man_preview.sh'
 
 alias cdf='cp ~/.steve_aliases.sh ~/Geekery/Github/CodingAdventures/Zsh/myDotFiles; cp ~/.zshrc ~/Geekery/Github/CodingAdventures/Zsh/myDotFiles; cp ~/.steve_functions.sh ~/Geekery/Github/CodingAdventures/Zsh/myDotFiles'
 alias css='cp ~/.bin/*.sh ~/Geekery/Github/CodingAdventures/Zsh/myShellScripts/'
@@ -70,10 +77,10 @@ alias pv='python --version'
 
 # Edit/reload .dotfiles.
 
-alias ea='micro ~/.steve_aliases.sh' # edit personalised aliases
-alias ef='micro ~/.steve_functions.sh' # edit personal zsh functions 
-alias ez='micro ~/.zshrc' # edit zsh config
-alias sz='source ~/.zshrc' # Reload zsh config, which references all of the above .dotfiles
+alias ea='nvim ~/.steve_aliases.sh' # edit personalised aliases
+alias ef='nvim ~/.steve_functions.sh' # edit personal zsh functions 
+alias ez='nvim ~/.zshrc' # edit zsh config
+alias sz='nvim ~/.zshrc' # Reload zsh config, which references all of the above .dotfiles
 
 # Find Wifi and hardwired IP.
 
@@ -92,7 +99,6 @@ alias medic='brew doctor'
 
 # Misc.
 
-alias bb='bbedit'
 alias imgdim='sips -g pixelHeight -g pixelWidth $1'
 alias pcolors='for i in {0..255}; do print -Pn "%K{$i}  %k%F{$i}${(l:3::0:)i}%f " ${${(M)$((i%6)):#3}:+$'\n'}; done'
 alias ot='other-transcode'

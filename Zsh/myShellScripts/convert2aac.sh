@@ -1,6 +1,6 @@
 #  Convert misc audio > aac
 #
-# - Steve. May 22
+# - Steve. May '22
 
 
 echo "*** Stevie's Audio Conversion McFuck (SACM) version 1.1 ***"
