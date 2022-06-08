@@ -47,7 +47,6 @@ alias op='open -a Preview'
 # Editors.
 
 alias mc='micro'
-alias nv='nvim'
 alias bb='bbedit'
 
 alias gl='glances -2'
@@ -71,16 +70,16 @@ alias css='cp ~/.bin/*.sh ~/Geekery/Github/CodingAdventures/Zsh/myShellScripts/'
 
 # Python 3.x
 
-alias python='python3.10'
-alias pip='pip3.10'
+alias python='python3'
+alias pip='pip3'
 alias pv='python --version'
 
 # Edit/reload .dotfiles.
 
-alias ea='nvim ~/.steve_aliases.sh' # edit personalised aliases
-alias ef='nvim ~/.steve_functions.sh' # edit personal zsh functions 
-alias ez='nvim ~/.zshrc' # edit zsh config
-alias sz='nvim ~/.zshrc' # Reload zsh config, which references all of the above .dotfiles
+alias ea='micro ~/.steve_aliases.sh' # edit personalised aliases
+alias ef='micro ~/.steve_functions.sh' # edit personal zsh functions 
+alias ez='micro ~/.zshrc' # edit zsh config
+alias sz='source ~/.zshrc' # Reload zsh config, which references all of the above .dotfiles
 
 # Find Wifi and hardwired IP.
 
