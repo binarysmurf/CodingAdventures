@@ -2,9 +2,16 @@
 
 # Directory navigation and related aliases.
 
+alias ols='/bin/ls'
+alias ola='/bin/ls -la'
+alias oll='/bin/ls -l'
+
 alias ls='colorls --sd'
 alias ll='colorls -l --sd'
 alias la='colorls -la --sd'
+
+
+
 
 # General QoL
 
