@@ -62,7 +62,7 @@ alias mount_efiHDD='sudo mkdir /Volumes/EFI_HDD; sudo mount -t msdos /dev/disk0s
 alias mount_efiSSD='sudo mkdir /Volumes/EFI_SSD; sudo mount -t msdos /dev/disk1s1 /Volumes/EFI_SSD'
 
 alias nuke='nuke.sh'
-alias c2v="convert2mp4.sh"
+alias cv="convert2mp4.sh"
 alias rv="repackage2mp4.sh"
 alias ca="convert2aac.sh"
 alias gic='generateIcons.sh'

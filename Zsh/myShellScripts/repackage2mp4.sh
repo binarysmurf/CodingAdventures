@@ -31,5 +31,5 @@ for i in *.mkv;
 echo "Completed process."
 rm *.mkv
 echo "Removed unrequired videos. 😳🤞🏼"
-echo "*** SVRM out! 🫳🏼 🎤 ***"
 echo "Done."
+echo "*** SVRM out! 🫳🏼 🎤 ***"
