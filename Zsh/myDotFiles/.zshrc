@@ -10,6 +10,17 @@ HISTSIZE=1000
 HIST_STAMPS="dd/mm/yyyy"
 SAVEHIST=1000
 
+setopt APPEND_HISTORY
+setopt AUTO_CD
+setopt HIST_IGNORE_ALL_DUPS
+setopt HIST_IGNORE_SPACE
+setopt HIST_FIND_NO_DUPS
+setopt HIST_EXPIRE_DUPS_FIRST
+setopt HIST_REDUCE_BLANKS
+setopt HIST_IGNORE_DUPS
+setopt HIST_VERIFY
+
+
 export HOMEBREW_NO_ENV_HINTS=true
 export MANPAGER="zsh -c 'col -bx | bat -l man -p'"
 export MANPATH="/usr/local/man:$MANPATH"
