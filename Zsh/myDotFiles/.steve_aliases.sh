@@ -72,7 +72,7 @@ alias ic='imgcat.sh'
 alias icat='imgcat.sh'
 alias mp='man_preview.sh'
 
-alias cdf='cp ~/.steve_aliases.sh ~/Geekery/Github/CodingAdventures/Zsh/myDotFiles; cp ~/.zshrc ~/Geekery/Github/CodingAdventures/Zsh/myDotFiles; cp ~/.steve_functions.sh ~/Geekery/Github/CodingAdventures/Zsh/myDotFiles'
+alias cdf='cp ~/.steve_aliases.sh ~/Geekery/Github/CodingAdventures/Zsh/myDotFiles; cp ~/.zshrc ~/Geekery/Github/CodingAdventures/Zsh/myDotFiles; cp ~/.steve_functions.sh ~/Geekery/Github/CodingAdventures/Zsh/myDotFiles; cp ~/.zprofile ~/Geekery/Github/CodingAdventures/Zsh/myDotFiles'
 alias css='cp ~/.bin/*.sh ~/Geekery/Github/CodingAdventures/Zsh/myShellScripts/'
 
 # Python 3.x
