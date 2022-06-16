@@ -58,8 +58,8 @@ alias bb='bbedit'
 
 alias gl='glances -2'
 
-alias mount_efiHDD='sudo mkdir /Volumes/EFI_HDD; sudo mount -t msdos /dev/disk0s1 /Volumes/EFI_HDD'
-alias mount_efiSSD='sudo mkdir /Volumes/EFI_SSD; sudo mount -t msdos /dev/disk1s1 /Volumes/EFI_SSD'
+alias mhdd='sudo mkdir /Volumes/EFI_HDD; sudo mount -t msdos /dev/disk1s1 /Volumes/EFI_HDD'
+alias mssd='sudo mkdir /Volumes/EFI_SSD; sudo mount -t msdos /dev/disk0s1 /Volumes/EFI_SSD'
 
 alias nuke='nuke.sh'
 alias cv="convert2mp4.sh"
