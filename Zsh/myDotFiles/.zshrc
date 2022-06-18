@@ -2,7 +2,15 @@ setopt PROMPT_SUBST
 setopt rmstarsilent
 
 autoload -U promptinit && promptinit
-PROMPT='%(?.%F{green}√.%F{blue}?%?)%f %B%F{yellow}%~%f%b %B>%b '
+
+# local host_name="%{$fg[cyan]%}λ"
+# local path_string="%{$fg[yellow]%}%~"
+# local prompt_string="»"
+# local return_status="%(?:%{$fg[blue]%}$prompt_string:%{$fg[red]%}$prompt_string)"
+
+# PROMPT='${host_name} ${path_string} ${return_status} %{$reset_color%}'
+
+PROMPT='%F{purple}☯%f %(?.%F{green}√.%F{blue}?%?)%f %B%F{yellow}%~%f%b %B>%b '
 RPROMPT='%*'
 
 HISTFILE=~/.zsh_history
