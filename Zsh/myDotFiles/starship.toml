@@ -23,4 +23,4 @@ command = "uptime.sh"
 when = "true"
 # format = "[$symbol($output)](green)"
 
-format = "[$time:$path]($style)[$read_only]($read_only_style) "
+format = "[$time:$path]($style) [$read_only]($read_only_style) "
