@@ -1,0 +1,29 @@
+[character]
+success_symbol = "[√ >](bold green)"
+error_symbol = "[√ >](bold red)"
+
+[git_branch]
+symbol = ""
+style = "bold white"
+format = '[\($symbol$branch\)]($style) '
+
+[git_status]
+# I don't care about untracked files or that there's a stash present.
+untracked = ""
+format = '([\[$conflicted$deleted$renamed$modified$staged$behind\]]($style) )'
+modified = '*'
+
+[status]
+disabled = false
+format = '[\[$status - $common_meaning\]](green) '
+
+[time]
+disabled = false 
+style = "cyan"
+
+[directory]
+truncation_length = 10
+truncate_to_repo = false
+style = "yellow"
+
+format = "[$time :$path]($style)[$read_only]($read_only_style) "
