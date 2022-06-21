@@ -18,4 +18,9 @@ truncation_length = 10
 truncate_to_repo = false
 style = "yellow"
 
+[custom.uptime]
+command = "uptime.sh"
+when = "true"
+# format = "[$symbol($output)](green)"
+
 format = "[$time:$path]($style)[$read_only]($read_only_style) "

@@ -26,7 +26,7 @@ set -g default-terminal "$TMUX"
 export HOMEBREW_NO_ENV_HINTS=true
 export MANPAGER="zsh -c 'col -bx | bat -l man -p'"
 export MANPATH="/usr/local/man:$MANPATH"
-export EDITOR='nvim'
+export EDITOR="micro"
 export MICRO_TRUECOLOR=1
 export LESSHISTFILE=-
 
