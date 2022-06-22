@@ -6,20 +6,13 @@ autoload -U promptinit && promptinit
 # PROMPT='%F{purple}☯%f %(?.%F{green}√.%F{blue}?%?)%f %B%F{yellow}%~%f%b %B>%b '
 # RPROMPT='%*'
 
+setopt APPEND_HISTORY
 HISTFILE=~/.zsh_history
 HISTSIZE=1000
-HIST_STAMPS="dd/mm/yyyy"
 SAVEHIST=1000
 
-setopt APPEND_HISTORY
+
 setopt AUTO_CD
-setopt HIST_IGNORE_ALL_DUPS
-setopt HIST_IGNORE_SPACE
-setopt HIST_FIND_NO_DUPS
-setopt HIST_EXPIRE_DUPS_FIRST
-setopt HIST_REDUCE_BLANKS
-setopt HIST_IGNORE_DUPS
-setopt HIST_VERIFY
 
 set -g default-terminal "$TMUX"
 
@@ -65,3 +58,5 @@ source ~/.zsh/plugins/sudo.plugin.zsh
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 eval "$(starship init zsh)"
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

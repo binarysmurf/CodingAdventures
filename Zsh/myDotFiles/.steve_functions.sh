@@ -53,3 +53,11 @@ WeeklyUpdate()
 	fi
 	
 }
+
+se()
+{
+
+# uses an interactive 'fuzzy finder' to access scripts in relevant directories
+
+  du -a ~/.bin/* ~/.* ~/.config/* | awk '{print $2}' | fzf | xargs -r $EDITOR	
+}
