@@ -50,6 +50,7 @@ alias root_off='sudo defaults write /Library/Preferences/com.apple.loginwindow S
 alias root_on='sudo defaults write /Library/Preferences/com.apple.loginwindow SHOWOTHERUSERS_MANAGED -bool TRUE'
 alias oa='open -a'
 alias op='open -a Preview'
+alias ts='tmux new -s Stevie'
 
 # Editors.
 
@@ -72,8 +73,11 @@ alias ic='imgcat.sh'
 alias icat='imgcat.sh'
 alias mp='man_preview.sh'
 alias av='alternaterepackage.sh'
-alias cdf='cp ~/.config/starship.toml ~/Geekery/Github/CodingAdventures/Zsh/myDotFiles; cp ~/.exrc ~/Geekery/Github/CodingAdventures/Zsh/myDotFiles; cp ~/.steve_aliases.sh ~/Geekery/Github/CodingAdventures/Zsh/myDotFiles; cp ~/.zshrc ~/Geekery/Github/CodingAdventures/Zsh/myDotFiles; cp ~/.steve_functions.sh ~/Geekery/Github/CodingAdventures/Zsh/myDotFiles; cp ~/.zprofile ~/Geekery/Github/CodingAdventures/Zsh/myDotFiles'
-alias css='cp ~/.bin/*.sh ~/Geekery/Github/CodingAdventures/Zsh/myShellScripts/'
+
+# Below aliases have been superceded - see ~/.bin/copy...sh
+
+# alias cdf='cp ~/.config/starship.toml ~/Geekery/Github/CodingAdventures/Zsh/myDotFiles; cp ~/.exrc ~/Geekery/Github/CodingAdventures/Zsh/myDotFiles; cp ~/.steve_aliases.sh ~/Geekery/Github/CodingAdventures/Zsh/myDotFiles; cp ~/.zshrc ~/Geekery/Github/CodingAdventures/Zsh/myDotFiles; cp ~/.steve_functions.sh ~/Geekery/Github/CodingAdventures/Zsh/myDotFiles; cp ~/.zprofile ~/Geekery/Github/CodingAdventures/Zsh/myDotFiles'
+# alias css='cp ~/.bin/*.sh ~/Geekery/Github/CodingAdventures/Zsh/myShellScripts/'
 
 # Python 3.x
 
