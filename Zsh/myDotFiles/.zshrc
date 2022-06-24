@@ -14,6 +14,10 @@ SAVEHIST=1000
 
 setopt AUTO_CD
 
+# Added setting this $TERM env var explicitly to facilitate 'glances' working with tmux
+
+TERM="xterm-256color"
+export TERM
 set -g default-terminal "$TMUX"
 
 export HOMEBREW_NO_ENV_HINTS=true
@@ -22,12 +26,6 @@ export MANPATH="/usr/local/man:$MANPATH"
 export EDITOR="micro"
 export MICRO_TRUECOLOR=1
 export LESSHISTFILE=-
-
-# Added setting this $TERM env var explicitly to facilitate 'glances' working with tmux
-
-TERM="xterm-256color"
-export TERM
-
 
 # export LDFLAGS="-L/usr/local/opt/ruby/lib"
 # export CPPFLAGS="-I/usr/local/opt/ruby/include"
