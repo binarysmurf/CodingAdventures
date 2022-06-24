@@ -51,6 +51,7 @@ alias root_on='sudo defaults write /Library/Preferences/com.apple.loginwindow SH
 alias oa='open -a'
 alias op='open -a Preview'
 alias ts='tmux new -s Stevie'
+alias ta='tmux attach'
 
 # Editors.
 
