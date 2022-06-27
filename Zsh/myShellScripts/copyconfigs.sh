@@ -18,4 +18,7 @@ cp ~/.steve_aliases.sh ~/Geekery/Github/CodingAdventures/Zsh/myDotFiles
 cp ~/.zshrc ~/Geekery/Github/CodingAdventures/Zsh/myDotFiles
 cp ~/.steve_functions.sh ~/Geekery/Github/CodingAdventures/Zsh/myDotFiles
 cp ~/.zprofile ~/Geekery/Github/CodingAdventures/Zsh/myDotFiles
+cp ~/.fzf.zsh ~/Geekery/Github/CodingAdventures/Zsh/myDotFiles
+cp ~/.tmux.conf.local ~/Geekery/Github/CodingAdventures/Zsh/myDotFiles
+
 open -a "Github Desktop"
