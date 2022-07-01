@@ -21,6 +21,9 @@ alias dx='cd ~/Library/Mobile\ Documents/com~apple~CloudDocs/Documents;clear'
 alias dk='cd ~/Desktop;clear'
 alias dl='cd ~/Downloads;clear'
 alias bd='cd ~/.bin;clear'
+alias px='cd ~/Pictures;clear'
+alias gd='cd ~/Geekery/Github;clear'
+alias ld='cd ~/Geekery/Linux;clear'
 
 alias hg='history | grep'
 alias ag='alias | grep'
@@ -50,7 +53,7 @@ alias root_off='sudo defaults write /Library/Preferences/com.apple.loginwindow S
 alias root_on='sudo defaults write /Library/Preferences/com.apple.loginwindow SHOWOTHERUSERS_MANAGED -bool TRUE'
 alias oa='open -a'
 alias op='open -a Preview'
-alias ts='tmux new -s Stevie'
+alias ts='tmux new -s'
 alias ta='tmux attach'
 
 # Editors.
@@ -69,13 +72,10 @@ alias rv="repackage2mp4.sh"
 alias ca="convert2aac.sh"
 alias gic='generateIcons.sh'
 alias gs='google-search.sh'
-alias uv='upscale.sh'
-alias ic='imgcat.sh'
 alias icat='imgcat.sh'
+alias uv='upscale.sh'
 alias mp='man_preview.sh'
 alias av='alternaterepackage.sh'
-
-# Below aliases have been superceded - see ~/.bin/copy...sh
 
 alias cdf='cp ~/.config/starship.toml ~/Geekery/Github/CodingAdventures/Zsh/myDotFiles; cp ~/.exrc ~/Geekery/Github/CodingAdventures/Zsh/myDotFiles; cp ~/.steve_aliases.sh ~/Geekery/Github/CodingAdventures/Zsh/myDotFiles; cp ~/.zshrc ~/Geekery/Github/CodingAdventures/Zsh/myDotFiles; cp ~/.steve_functions.sh ~/Geekery/Github/CodingAdventures/Zsh/myDotFiles; cp ~/.zprofile ~/Geekery/Github/CodingAdventures/Zsh/myDotFiles'
 alias css='cp ~/.bin/*.sh ~/Geekery/Github/CodingAdventures/Zsh/myShellScripts/'
@@ -84,6 +84,7 @@ alias css='cp ~/.bin/*.sh ~/Geekery/Github/CodingAdventures/Zsh/myShellScripts/'
 
 alias python='python3'
 alias pip='pip3'
+alias pa='pip3-autoremove'
 alias pv='python --version'
 
 # Edit/reload .dotfiles.
