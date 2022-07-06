@@ -70,6 +70,7 @@ alias nuke='nuke.sh'
 alias cv="convert2mp4.sh"
 alias rv="repackage2mp4.sh"
 alias ca="convert2aac.sh"
+alias cc='copyconfigs.sh'
 alias gic='generateIcons.sh'
 alias gs='google-search.sh'
 alias icat='imgcat.sh'
