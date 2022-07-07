@@ -3,7 +3,7 @@
 from PIL import Image
 from PIL import GifImagePlugin
 
-imageObject = Image.open("./ColourpurpleGal.gif")
+imageObject = Image.open("./eyebrow.gif")
 
 print(imageObject.is_animated)
 print(imageObject.n_frames)
