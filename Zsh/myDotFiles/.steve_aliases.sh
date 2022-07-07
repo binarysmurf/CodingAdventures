@@ -23,6 +23,7 @@ alias dl='cd ~/Downloads;clear'
 alias bd='cd ~/.bin;clear'
 alias px='cd ~/Pictures;clear'
 alias gd='cd ~/Geekery/Github;clear'
+alias pd='cd ~/Geekery/Github/CodingAdventures/Python;clear'
 alias ld='cd ~/Geekery/Linux;clear'
 
 alias hg='history | grep'
@@ -84,8 +85,6 @@ alias css='cp ~/.bin/*.sh ~/Geekery/Github/CodingAdventures/Zsh/myShellScripts/'
 # Python 3.x
 
 alias python='python3'
-alias pip='pip3'
-alias pa='pip3-autoremove'
 alias pv='python --version'
 
 # Edit/reload .dotfiles.
