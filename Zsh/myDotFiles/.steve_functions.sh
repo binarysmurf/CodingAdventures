@@ -37,7 +37,7 @@ WeeklyUpdate()
 			return
 		else						# Otherwise, do the update.. 
 		    echo "Yo Stevie!! Doing the weekly Homebrew update, and deleting local snapshots ...\n"
-		    brew update; brew upgrade; brew cleanup --prune=all; brew doctor
+		    brew update; brew upgrade; brew autoremove; brew cleanup --prune=all; brew doctor
 		    tmutil deletelocalsnapshots /Volumes/Internal\ HD
 		    touch ~/.updatedone # .. and create a file to stop a repeat update.
 		fi

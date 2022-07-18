@@ -1,4 +1,4 @@
-# My aliases: Feb - Jun 2022. By Steve. So fuck off. 😀
+# My aliases: Feb - Jul 2022. By Steve. So fuck off. 😀
 
 # Directory navigation and related aliases.
 
@@ -9,9 +9,6 @@ alias oll='/bin/ls -l'
 alias ls='colorls --sd'
 alias ll='colorls -l --sd'
 alias la='colorls -la --sd'
-
-
-
 
 # General QoL
 
@@ -34,6 +31,8 @@ alias ag='alias | grep'
 alias duf="duf --hide-mp '*machine*' --hide special"
 alias df="df -PH|egrep -v '(devfs|Preboot|VM|Update|xarts|iSCPreboot|Hardware|auto_home|com.apple.TimeMachine)'"
 alias dls='tmutil deletelocalsnapshots /Volumes/Internal\ HD'
+alias dew='sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.DiskArbitration.diskarbitrationd.plist DADisableEjectNotification -bool YES && sudo pkill diskarbitrationd'
+alias eew='sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.DiskArbitration.diskarbitrationd.plist DADisableEjectNotification -bool NO && sudo pkill diskarbitrationd'
 alias cls='clear'
 alias cat='bat'
 alias pe='printenv | sort'
@@ -115,4 +114,4 @@ alias imgdim='sips -g pixelHeight -g pixelWidth $1'
 alias pcolors='for i in {0..255}; do print -Pn "%K{$i}  %k%F{$i}${(l:3::0:)i}%f " ${${(M)$((i%6)):#3}:+$'\n'}; done'
 alias ot='other-transcode'
 alias yg='you-get'
-alias og='open -a gifski '
+alias og='open -a gifski'
