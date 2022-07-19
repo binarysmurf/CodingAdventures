@@ -104,6 +104,7 @@ alias brun='brew uninstall'
 alias brup='brew update; brew upgrade; brew doctor'
 alias brrm='brew uninstall'
 alias brcl='brew cleanup --prune=all'
+alias bra='brew autoremove'
 alias bbd='brew bundle dump'
 alias medic='brew doctor'
 
