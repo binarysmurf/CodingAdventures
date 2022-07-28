@@ -44,15 +44,6 @@ export PATH="/Users/stevie/.bin:$PATH" # My own scripts,
 
 export PATH="$(perl -e 'print join(":", grep { not $seen{$_}++ } split(/:/, $ENV{PATH}))')"
 
-# My personal aliases and functions.
-
-source ~/.steve_aliases.sh
-source ~/.steve_functions.sh
-
-# Update Homebrew and delete local snapshots
-
-WeeklyUpdate
-
 # zsh plugins
 
 source ~/.zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
@@ -62,7 +53,14 @@ source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 eval "$(starship init zsh)"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
 # Fig post block. Keep at the bottom of this file.
 [[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && . "$HOME/.fig/shell/zshrc.post.zsh"
+
 test -e /Users/stevie/.iterm2_shell_integration.zsh && source /Users/stevie/.iterm2_shell_integration.zsh || true
+
+# My personal aliases and functions.
+
+source ~/.steve_aliases.sh
+source ~/.steve_functions.sh
+# Update Homebrew and delete local snapshots
+WeeklyUpdate

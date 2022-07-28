@@ -6,9 +6,9 @@ alias ols='/bin/ls'
 alias ola='/bin/ls -la'
 alias oll='/bin/ls -l'
 
-alias ls='colorls --sd'
-alias ll='colorls -l --sd'
-alias la='colorls -la --sd'
+alias ls='lsd'
+alias ll='lsd -l'
+alias la='lsd -lA'
 
 # General QoL
 
@@ -73,7 +73,7 @@ alias ca="convert2aac.sh"
 alias cc='copyconfigs.sh'
 alias gic='generateIcons.sh'
 alias gs='google-search.sh'
-alias icat='imgcat.sh'
+# alias icat='imgcat.sh'
 alias uv='upscale.sh'
 alias mp='man_preview.sh'
 alias av='alternaterepackage.sh'

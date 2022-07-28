@@ -55,14 +55,6 @@ WeeklyUpdate()
 	
 }
 
-se()
-{
-
-# uses an interactive 'fuzzy finder' to access scripts in relevant directories
-
-  du -a ~/.bin/* ~/.* ~/.config/* | awk '{print $2}' | fzf | xargs -r $EDITOR	
-}
-
 pskill() {
   procs $1 --no-header --only pid | xargs kill -15
 }
