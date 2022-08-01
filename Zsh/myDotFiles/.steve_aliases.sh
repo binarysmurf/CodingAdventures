@@ -1,4 +1,4 @@
-# My aliases: Feb - Jul 2022. By Steve. So fuck off. 😀
+	# My aliases: Feb - Jul 2022. By Steve. So fuck off. 😀
 
 # Directory navigation and related aliases.
 
@@ -90,12 +90,13 @@ alias pv='python --version'
 alias ea='micro ~/.steve_aliases.sh' # edit personalised aliases
 alias ef='micro ~/.steve_functions.sh' # edit personal zsh functions 
 alias ez='micro ~/.zshrc' # edit zsh config
-alias sz='source ~/.zshrc' # Reload zsh config, which references all of the above .dotfiles
+alias sz='source ~/.zshrc; clear' # Reload zsh config, which references all of the above .dotfiles
 
 # Find Wifi and hardwired IP.
 
 alias wfip='ipconfig getsummary en1 | grep ciaddr'
 alias ethip='ipconfig getsummary en0 | grep ciaddr'
+alias kl='ssh -L 61000:localhost:5901 -N -f binarysmurf@194.195.125.30'
 
 # Homebrew.
 
@@ -103,10 +104,9 @@ alias brin='brew install'
 alias brun='brew uninstall'
 alias brup='brew update; brew upgrade; brew doctor'
 alias brrm='brew uninstall'
-alias brcl='brew cleanup --prune=all'
 alias bra='brew autoremove'
 alias bbd='brew bundle dump'
-alias medic='brew doctor'
+alias medic='brew cleanup --prune=all; brew doctor'
 
 # Misc.
 
