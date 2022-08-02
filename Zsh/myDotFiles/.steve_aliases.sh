@@ -96,7 +96,8 @@ alias sz='source ~/.zshrc; clear' # Reload zsh config, which references all of t
 
 alias wfip='ipconfig getsummary en1 | grep ciaddr'
 alias ethip='ipconfig getsummary en0 | grep ciaddr'
-alias kl='ssh -L 61000:localhost:5901 -N -f binarysmurf@194.195.125.30'
+alias klt='ssh -L 61000:localhost:5901 -N -f binarysmurf@194.195.125.30'
+alias kl='ssh root@194.195.125.30'
 
 # Homebrew.
 
