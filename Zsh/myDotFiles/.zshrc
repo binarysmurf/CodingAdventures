@@ -57,7 +57,6 @@ test -e /Users/stevie/.iterm2_shell_integration.zsh && source /Users/stevie/.ite
 
 # Fig post block. Keep at the bottom of this file.
 [[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && . "$HOME/.fig/shell/zshrc.post.zsh"
-
 # My personal aliases and functions.
 source ~/.steve_aliases.sh
 source ~/.steve_functions.sh
