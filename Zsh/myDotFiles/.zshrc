@@ -27,6 +27,7 @@ export MANPATH="/usr/local/man:$MANPATH"
 export EDITOR="micro"
 export MICRO_TRUECOLOR=1
 export LESSHISTFILE=-
+export KALI_NODE='37730818'
 
 # export LDFLAGS="-L/usr/local/opt/ruby/lib"
 # export CPPFLAGS="-I/usr/local/opt/ruby/include"
