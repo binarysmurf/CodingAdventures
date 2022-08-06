@@ -38,7 +38,7 @@ WeeklyUpdate()
 		else						# Otherwise, do the update.. 
 		    echo "Yo Stevie!! Updating Homebrew, Fig, and deleting local snapshots ...\n"
 		    brew update; brew upgrade; brew autoremove; brew cleanup --prune=all; brew doctor
-			fig update
+			fig update --no-confirm
 		    tmutil deletelocalsnapshots /Volumes/Internal\ HD
 		    tmutil deletelocalsnapshots /Volumes/External\ HD
 
