@@ -9,6 +9,8 @@ alias oll='/bin/ls -l'
 alias ls='lsd'
 alias ll='lsd -l'
 alias la='lsd -lA'
+alias lt='lsd -l --total-size --sizesort'
+alias lta='lsd -lA --total-size --sizesort'
 
 # General QoL
 
