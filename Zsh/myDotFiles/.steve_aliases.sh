@@ -116,6 +116,5 @@ alias pcolors='for i in {0..255}; do print -Pn "%K{$i}  %k%F{$i}${(l:3::0:)i}%f 
 alias ot='other-transcode'
 alias yg='you-get'
 alias og='open -a gifski'
-alias lc='linode-cli'
-alias lcl='linode-cli linodes'
+alias lc='linode-cli linodes'
 alias lca='linode-cli account view'
