@@ -8,9 +8,9 @@ autoload -U promptinit && promptinit
 # PROMPT='%F{purple}☯%f %(?.%F{green}√.%F{blue}?%?)%f %B%F{yellow}%~%f%b %B>%b '
 # RPROMPT='%*'
 
-HISTFILE=~/.zsh_history
-HISTSIZE=1000
-SAVEHIST=1000
+# HISTFILE=~/.zsh_history
+# HISTSIZE=1000
+# SAVEHIST=1000
 
 setopt AUTO_CD
 
