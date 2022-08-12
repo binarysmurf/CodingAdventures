@@ -21,6 +21,7 @@ export TERM
 set -g default-terminal "$TMUX"
 
 export HOMEBREW_NO_ENV_HINTS=true
+export HOMEBREW_NO_ANALYTICS=1
 export MANPAGER="zsh -c 'col -bx | bat -l man -p'"
 export MANPATH="/usr/local/man:$MANPATH"
 export EDITOR="micro"
@@ -53,12 +54,12 @@ eval "$(starship init zsh)"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 test -e /Users/stevie/.iterm2_shell_integration.zsh && source /Users/stevie/.iterm2_shell_integration.zsh || true
-
-
 # Fig post block. Keep at the bottom of this file.
 [[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && . "$HOME/.fig/shell/zshrc.post.zsh"
+
 # My personal aliases and functions.
 source ~/.steve_aliases.sh
 source ~/.steve_functions.sh
 # Update Homebrew and delete local snapshots
 WeeklyUpdate
+# /bin/cat .burger.txt
