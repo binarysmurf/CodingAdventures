@@ -1,4 +1,4 @@
-	# My aliases: Feb - Jul 2022. By Steve. So fuck off. 😀
+	# My aliases: Feb - Aug 2022. By Steve. So fuck off. 😀
 
 # Directory navigation and related aliases.
 
@@ -37,7 +37,7 @@ alias dew='sudo defaults write /Library/Preferences/SystemConfiguration/com.appl
 alias eew='sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.DiskArbitration.diskarbitrationd.plist DADisableEjectNotification -bool NO && sudo pkill diskarbitrationd'
 alias cls='clear'
 alias cat='bat'
-alias pe='printenv | sort'
+alias penv='printenv | sort'
 alias clds='find . -name ".DS_Store" -delete'
 alias clud='find . -name ".updatedone" -delete'
 alias cll='find . -name ".localized" -delete'

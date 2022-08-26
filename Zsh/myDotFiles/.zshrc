@@ -1,5 +1,3 @@
-# Fig pre block. Keep at the top of this file.
-[[ -f "$HOME/.fig/shell/zshrc.pre.zsh" ]] && . "$HOME/.fig/shell/zshrc.pre.zsh"
 setopt PROMPT_SUBST
 setopt rmstarsilent
 
@@ -28,6 +26,8 @@ export EDITOR="micro"
 export MICRO_TRUECOLOR=1
 export LESSHISTFILE=-
 export KALI_NODE='37730818'
+export LESS="-SXIFRs"
+
 
 # export LDFLAGS="-L/usr/local/opt/ruby/lib"
 # export CPPFLAGS="-I/usr/local/opt/ruby/include"
@@ -54,12 +54,9 @@ eval "$(starship init zsh)"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 test -e /Users/stevie/.iterm2_shell_integration.zsh && source /Users/stevie/.iterm2_shell_integration.zsh || true
-# Fig post block. Keep at the bottom of this file.
-[[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && . "$HOME/.fig/shell/zshrc.post.zsh"
 
 # My personal aliases and functions.
 source ~/.steve_aliases.sh
 source ~/.steve_functions.sh
 # Update Homebrew and delete local snapshots
 WeeklyUpdate
-# /bin/cat .burger.txt

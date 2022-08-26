@@ -36,9 +36,9 @@ WeeklyUpdate()
 		if [ -f ~/.updatedone ]; then # Have we previously updated today? Exit!
 			return
 		else						# Otherwise, do the update.. 
-		    echo "Yo Stevie!! Updating Homebrew, Fig, and deleting local snapshots ...\n"
+		    echo "Yo Stevie!! Updating Homebrew and deleting local snapshots ...\n"
 		    brew update; brew upgrade; brew autoremove; brew cleanup --prune=all; brew doctor
-			fig update --no-confirm
+#			fig update --no-confirm
 		    tmutil deletelocalsnapshots /Volumes/Internal\ HD
 		    tmutil deletelocalsnapshots /Volumes/External\ HD
 
