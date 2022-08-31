@@ -36,7 +36,11 @@ else
     echo "Converting" $fcount "video. 😀"
 fi
 
-for i in *.$1; do other-transcode --mp4 "$i"; done 
+for i in *.$1; 
+	do echo $i;
+	other-transcode --mp4 "$i"; 
+done 
+
 echo "Completed conversion process."
 
 rm *.$1

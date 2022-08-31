@@ -32,7 +32,8 @@ else
 fi
 
 for i in *.$1; do 
-	ffmpeg -loglevel quiet -i "$i" -c:a aac -vn -b:a 256k "${i%.*}.m4a";
+    echo $i
+	ffmpeg -loglevel quiet -i "$i" -c:a aac -vn -b:a 320k "${i%.*}.m4a";
 done 
 echo "Completed conversion process."
 
