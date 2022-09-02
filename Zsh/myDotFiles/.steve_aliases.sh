@@ -1,4 +1,4 @@
-	# My aliases: Feb - Aug 2022. By Steve. So fuck off. 😀
+# My aliases: Feb - Aug 2022. By Steve. So fuck off. 😀
 
 # Directory navigation and related aliases.
 
@@ -84,7 +84,8 @@ alias css='cp ~/.bin/*.sh ~/Geekery/Github/CodingAdventures/Zsh/myShellScripts/'
 # Python 3.x
 
 alias python='python3'
-alias pv='python --version'
+alias pv='python3 --version'
+alias pip='pip3'
 
 # Edit/reload .dotfiles.
 
