@@ -8,7 +8,7 @@ echo "*** Stevie's Audio Conversion McFuck (SACM) version 1.1 ***"
 # check correct args
 
 if (($# < 1)); then
-    echo "*** Please supply an input audio format to convert to m4a .. E.g. 'convert2aac mp3' or 'convert2aac flac'."
+    echo "*** Please supply an input audio format to convert to flac .. E.g. 'convert2aac mp3' or 'convert2aac flac'."
     exit 99
 fi
 
@@ -33,7 +33,7 @@ fi
 
 for i in *.$1; do 
     echo $i
-	ffmpeg -loglevel quiet -i "$i" -c:a aac -vn -b:a 320k "${i%.*}.m4a";
+	ffmpeg -loglevel quiet -i "$i" -c:a flac -vn "${i%.*}.flac";
 done 
 echo "Completed conversion process."
 

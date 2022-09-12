@@ -22,7 +22,7 @@ export HOMEBREW_NO_ENV_HINTS=true
 export HOMEBREW_NO_ANALYTICS=1
 export MANPAGER="zsh -c 'col -bx | bat -l man -p'"
 export MANPATH="/usr/local/man:$MANPATH"
-export EDITOR="micro"
+export EDITOR="nvim"
 export MICRO_TRUECOLOR=1
 export LESSHISTFILE=-
 export KALI_NODE='37730818'
@@ -37,7 +37,7 @@ export PATH="/usr/local/lib/ruby/gems/3.1.0/bin:$PATH"
 
 # General modifications to $PATH environment variable.
 
-export PATH="/usr/local/sbin:$PATH"
+# export PATH="/usr/local/sbin:$PATH"
 export PATH="/Users/stevie/.bin:$PATH" # My own scripts, 
 
 # Don't ask me what this does. It cleans up your $PATH enviroment variable via some black magic fuckery.
@@ -58,5 +58,6 @@ test -e /Users/stevie/.iterm2_shell_integration.zsh && source /Users/stevie/.ite
 # My personal aliases and functions.
 source ~/.steve_aliases.sh
 source ~/.steve_functions.sh
+
 # Update Homebrew and delete local snapshots
 WeeklyUpdate

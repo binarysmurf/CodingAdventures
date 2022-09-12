@@ -22,7 +22,7 @@ alias dl='cd ~/Downloads;clear'
 alias bd='cd ~/.bin;clear'
 alias px='cd ~/Pictures;clear'
 alias gd='cd ~/Geekery/Github;clear'
-alias pd='cd ~/Geekery/Github/CodingAdventures/Python;clear'
+alias pd='cd ~/Geekery/Python;clear'
 alias ld='cd ~/Geekery/Linux;clear'
 
 alias hg='history | grep'
@@ -35,6 +35,10 @@ alias df="df -PH|egrep -v '(devfs|Preboot|VM|Update|xarts|iSCPreboot|Hardware|au
 alias dls='tmutil deletelocalsnapshots /Volumes/Internal\ HD'
 alias dew='sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.DiskArbitration.diskarbitrationd.plist DADisableEjectNotification -bool YES && sudo pkill diskarbitrationd'
 alias eew='sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.DiskArbitration.diskarbitrationd.plist DADisableEjectNotification -bool NO && sudo pkill diskarbitrationd'
+
+alias spb_off='defaults write com.apple.systempreferences AttentionPrefBundleIDs 0 && killall Dock'
+alias spb_on='defaults write com.apple.systempreferences AttentionPrefBundleIDs 1 && killall Dock'
+
 alias cls='clear'
 alias cat='bat'
 alias penv='printenv | sort'
@@ -58,12 +62,14 @@ alias op='open -a Preview'
 alias ts='tmux new -s'
 alias ta='tmux attach'
 
-# Editors.
+# Editor related.
 
 alias mc='micro'
 alias bb='bbedit'
-
-alias gl='glances -2'
+alias nv='nvim'
+alias ed='${EDITOR}'
+alias sm="export EDITOR='micro'"
+alias sn="export EDITOR='nvim'"
 
 alias mhdd='sudo mkdir /Volumes/EFI_HDD; sudo mount -t msdos /dev/disk1s1 /Volumes/EFI_HDD'
 alias mssd='sudo mkdir /Volumes/EFI_SSD; sudo mount -t msdos /dev/disk0s1 /Volumes/EFI_SSD'
@@ -72,14 +78,16 @@ alias nuke='nuke.sh'
 alias cv="convert2mp4.sh"
 alias rv="repackage2mp4.sh"
 alias ca="convert2aac.sh"
+alias cf="convert2flac.sh"
 alias cc='copyconfigs.sh'
 alias gic='generateIcons.sh'
 alias gs='google-search.sh'
 alias icat='imgcat.sh'
 alias uv='upscale.sh'
 alias mp='man_preview.sh'
-alias av='alternaterepackage.sh'
 alias css='cp ~/.bin/*.sh ~/Geekery/Github/CodingAdventures/Zsh/myShellScripts/'
+alias gl='glances -2'
+
 
 # Python 3.x
 
@@ -88,18 +96,16 @@ alias pv='python3 --version'
 alias pip='pip3'
 
 # Edit/reload .dotfiles.
-
-alias ea='micro ~/.steve_aliases.sh' # edit personalised aliases
-alias ef='micro ~/.steve_functions.sh' # edit personal zsh functions 
-alias ez='micro ~/.zshrc' # edit zsh config
+	
+alias ez='${EDITOR} ${ZDOTDIR:-$HOME}/.zshrc' # Edit zsh config
+alias ea='${EDITOR} ${ZDOTDIR:-$HOME}/.steve_aliases.sh' # Edit personalised aliases
+alias ef='${EDITOR} ${ZDOTDIR:-$HOME}/.steve_functions.sh' # Edit personalised functions
 alias sz='source ~/.zshrc; clear' # Reload zsh config, which references all of the above .dotfiles
 
 # Find Wifi and hardwired IP.
 
 alias wfip='ipconfig getsummary en1 | grep ciaddr'
 alias ethip='ipconfig getsummary en0 | grep ciaddr'
-alias klt='ssh -L 61000:localhost:5901 -N -f binarysmurf@194.195.125.30'
-alias kl='ssh root@194.195.125.30'
 
 # Homebrew.
 
@@ -118,5 +124,3 @@ alias pcolors='for i in {0..255}; do print -Pn "%K{$i}  %k%F{$i}${(l:3::0:)i}%f 
 alias ot='other-transcode'
 alias yg='you-get'
 alias og='open -a gifski'
-alias lc='linode-cli linodes'
-alias lca='linode-cli account view'
