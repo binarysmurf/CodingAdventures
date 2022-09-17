@@ -50,7 +50,6 @@ source ~/.zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source ~/.zsh/plugins/sudo.plugin.zsh
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-eval "$(starship init zsh)"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 test -e /Users/stevie/.iterm2_shell_integration.zsh && source /Users/stevie/.iterm2_shell_integration.zsh || true
@@ -61,3 +60,5 @@ source ~/.steve_functions.sh
 
 # Update Homebrew and delete local snapshots
 WeeklyUpdate
+eval "$(starship init zsh)"
+# /bin/cat ~/.burger.txt
