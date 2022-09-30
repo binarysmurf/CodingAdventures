@@ -36,11 +36,10 @@ else
     echo "Converting" $fcount "video. 😀"
 fi
 
-for i in *.$1; 
-	do echo $i;
+for i in *.$1; do 
+	echo $i
 	other-transcode --mp4 "$i"; 
 done 
-
 echo "Completed conversion process."
 
 rm *.$1
@@ -48,6 +47,6 @@ rm *.log
 
 echo "Removed unrequired videos and logs. 😳🤞🏼"
 echo "Done."
-
 echo "*** SVCM out! 🫳  🎤 ***"
+
 exit 0

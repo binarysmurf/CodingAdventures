@@ -94,6 +94,7 @@ alias gl='glances -2'
 alias python='python3'
 alias pv='python3 --version'
 alias pip='pip3'
+alias pa='pip-autoremove'
 
 # Edit/reload .dotfiles.
 	
@@ -115,7 +116,9 @@ alias brup='brew update; brew upgrade; brew doctor'
 alias brrm='brew uninstall'
 alias bra='brew autoremove'
 alias bbd='brew bundle dump'
+alias brcl='brew cleanup --prune=all'
 alias medic='brew cleanup --prune=all; brew doctor'
+
 
 # Misc.
 

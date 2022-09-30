@@ -22,7 +22,7 @@ export HOMEBREW_NO_ENV_HINTS=true
 export HOMEBREW_NO_ANALYTICS=1
 export MANPAGER="zsh -c 'col -bx | bat -l man -p'"
 export MANPATH="/usr/local/man:$MANPATH"
-export EDITOR="nvim"
+export EDITOR="micro"
 export MICRO_TRUECOLOR=1
 export LESSHISTFILE=-
 export KALI_NODE='37730818'
@@ -33,6 +33,7 @@ export LDFLAGS="-L/usr/local/opt/ruby/lib"
 export CPPFLAGS="-I/usr/local/opt/ruby/include"
 
 export PATH="/usr/local/opt/ruby/bin:$PATH"
+export PATH="/usr/local/sbin:$PATH"
 export PATH="/usr/local/lib/ruby/gems/3.1.0/bin:$PATH"
 
 # General modifications to $PATH environment variable.

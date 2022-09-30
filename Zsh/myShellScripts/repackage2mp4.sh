@@ -23,11 +23,10 @@ else
     echo "Repackaging" $fcount "video container... 😀"
 fi
 
-for i in *.mkv; 
-    do 
+for i in *.mkv; do 
+		echo $i
         ffmpeg -loglevel quiet -i "$i" -codec copy "${i%.*}.mp4";
-    done
-
+done
 echo "Completed process."
 rm *.mkv
 echo "Removed unrequired videos. 😳🤞🏼"
