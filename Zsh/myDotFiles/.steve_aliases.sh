@@ -80,6 +80,7 @@ alias rv="repackage2mp4.sh"
 alias ca="convert2aac.sh"
 alias cf="convert2flac.sh"
 alias cc='copyconfigs.sh'
+alias cb='cleanbuild.sh'
 alias gic='generateIcons.sh'
 alias gs='google-search.sh'
 alias icat='imgcat.sh'
