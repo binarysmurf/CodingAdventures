@@ -89,7 +89,6 @@ alias mp='man_preview.sh'
 alias css='cp ~/.bin/*.sh ~/Geekery/Github/CodingAdventures/Zsh/myShellScripts/'
 alias gl='glances -2'
 
-
 # Python 3.x
 
 alias python='python3'
