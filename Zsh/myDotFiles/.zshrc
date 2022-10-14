@@ -22,7 +22,7 @@ export HOMEBREW_NO_ENV_HINTS=true
 export HOMEBREW_NO_ANALYTICS=1
 export MANPAGER="zsh -c 'col -bx | bat -l man -p'"
 export MANPATH="/usr/local/man:$MANPATH"
-export EDITOR="micro"
+export EDITOR="nvim"
 export MICRO_TRUECOLOR=1
 export LESSHISTFILE=-
 export KALI_NODE='37730818'
@@ -62,4 +62,3 @@ source ~/.steve_functions.sh
 # Update Homebrew and delete local snapshots
 WeeklyUpdate
 eval "$(starship init zsh)"
-# /bin/cat ~/.burger.txt
