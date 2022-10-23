@@ -1,17 +1,16 @@
-
 add_newline = false
 command_timeout = 1000
 [character]
-success_symbol = "[√>](bold green)"
+success_symbol = "[√>](bold yellow)"
 error_symbol = "[√>](bold red)"
 
 [status]
 disabled = false
-format = '[\[$status - $common_meaning\]](green) '
+format = '[\[$status - $common_meaning\]](yellow) '
 
 [time]
 disabled = false 
-style = "cyan"
+style = "yellow"
 #STARSHIP_TIME_PREFIX=""
 
 [directory]

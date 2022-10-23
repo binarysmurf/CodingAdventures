@@ -2,15 +2,19 @@ setopt PROMPT_SUBST
 setopt rmstarsilent
 
 autoload -U promptinit && promptinit
-
-# PROMPT='%F{purple}☯%f %(?.%F{green}√.%F{blue}?%?)%f %B%F{yellow}%~%f%b %B>%b '
-# RPROMPT='%*'
-
-# HISTFILE=~/.zsh_history
-# HISTSIZE=1000
-# SAVEHIST=1000
-
 setopt AUTO_CD
+
+HISTSIZE=5000
+HISTFILE=~/.zsh_history
+SAVEHIST=5000
+HISTDUP=erase
+setopt appendhistory
+setopt sharehistory
+setopt incappendhistory
+setopt hist_ignore_all_dups
+setopt hist_save_no_dups
+setopt hist_ignore_dups
+setopt hist_find_no_dups
 
 # Added setting this $TERM env var explicitly to facilitate 'glances' working with tmux
 
@@ -61,4 +65,6 @@ source ~/.steve_functions.sh
 
 # Update Homebrew and delete local snapshots
 WeeklyUpdate
-eval "$(starship init zsh)"
+
+# eval "$(oh-my-posh init zsh)"
+eval "$(oh-my-posh init zsh --config $(brew --prefix oh-my-posh)/themes/capr4n.omp.json)"
