@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # My aliases: Feb - Aug 2022. By Steve. So fuck off. 😀
 
 # Directory navigation and related aliases.
@@ -65,8 +67,8 @@ alias ta='tmux attach'
 # Editor related.
 
 alias mc='micro'
-alias bb='bbedit'
-alias nv='nvim'
+# alias bb='bbedit'
+# alias nv='nvim'
 alias ed='${EDITOR}'
 alias sm="export EDITOR='micro'"
 alias sn="export EDITOR='nvim'"
@@ -122,7 +124,7 @@ alias medic='brew cleanup --prune=all; brew doctor'
 
 # Misc.
 
-alias imgdim='sips -g pixelHeight -g pixelWidth $1'
+alias imgdim='sips -g pixelHeight -g pixelWidth'
 alias pcolors='for i in {0..255}; do print -Pn "%K{$i}  %k%F{$i}${(l:3::0:)i}%f " ${${(M)$((i%6)):#3}:+$'\n'}; done'
 alias ot='other-transcode'
 alias yg='you-get'

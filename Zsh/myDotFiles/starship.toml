@@ -1,7 +1,7 @@
 add_newline = false
 command_timeout = 1000
 [character]
-success_symbol = "[√>](bold yellow)"
+success_symbol = "[√>](bold green)"
 error_symbol = "[√>](bold red)"
 
 [status]
@@ -10,17 +10,11 @@ format = '[\[$status - $common_meaning\]](yellow) '
 
 [time]
 disabled = false 
-style = "yellow"
-#STARSHIP_TIME_PREFIX=""
+style = "bold #8c8b00"
 
 [directory]
 truncation_length = 10
 truncate_to_repo = false
-style = "yellow"
-
-[custom.uptime]
-command = "uptime.sh"
-when = "true"
-# format = "[$symbol($output)](green)"
+style = "bold yellow"
 
 format = "[$time:$path]($style) [$read_only]($read_only_style)"

@@ -3,3 +3,6 @@
 
 PATH="/Library/Frameworks/Python.framework/Versions/3.10/bin:${PATH}"
 export PATH
+
+# Created by `pipx` on 2022-10-24 02:37:09
+export PATH="$PATH:/Users/stevie/.local/bin"

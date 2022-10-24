@@ -1,8 +1,9 @@
 setopt PROMPT_SUBST
 setopt rmstarsilent
 
-autoload -U promptinit && promptinit
-setopt AUTO_CD
+autoload -Uz compinit && compinit
+autoload -Uz promptinit && promptinit
+autoload -Uz bashcompinit && bashcompinit
 
 HISTSIZE=5000
 HISTFILE=~/.zsh_history
@@ -29,7 +30,6 @@ export MANPATH="/usr/local/man:$MANPATH"
 export EDITOR="nvim"
 export MICRO_TRUECOLOR=1
 export LESSHISTFILE=-
-export KALI_NODE='37730818'
 export LESS="-SXIFRs"
 
 
@@ -40,21 +40,19 @@ export PATH="/usr/local/opt/ruby/bin:$PATH"
 export PATH="/usr/local/sbin:$PATH"
 export PATH="/usr/local/lib/ruby/gems/3.1.0/bin:$PATH"
 
-# General modifications to $PATH environment variable.
-
-# export PATH="/usr/local/sbin:$PATH"
-export PATH="/Users/stevie/.bin:$PATH" # My own scripts, 
+# Created by `pipx` on 2022-10-24 02:37:09
+export PATH="$PATH:/Users/stevie/.bin"
+export PATH="$PATH:/Users/stevie/.local/bin"
 
 # Don't ask me what this does. It cleans up your $PATH enviroment variable via some black magic fuckery.
 
 export PATH="$(perl -e 'print join(":", grep { not $seen{$_}++ } split(/:/, $ENV{PATH}))')"
 
-# zsh plugins
+# Must have zsh plugins
 
 source ~/.zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source ~/.zsh/plugins/sudo.plugin.zsh
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 test -e /Users/stevie/.iterm2_shell_integration.zsh && source /Users/stevie/.iterm2_shell_integration.zsh || true
@@ -66,5 +64,5 @@ source ~/.steve_functions.sh
 # Update Homebrew and delete local snapshots
 WeeklyUpdate
 
-# eval "$(oh-my-posh init zsh)"
-eval "$(oh-my-posh init zsh --config $(brew --prefix oh-my-posh)/themes/capr4n.omp.json)"
+eval "$(register-python-argcomplete pipx)"
+eval "$(starship init zsh)"
