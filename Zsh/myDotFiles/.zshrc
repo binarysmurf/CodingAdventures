@@ -1,9 +1,10 @@
+# zmodload zsh/zprof
 setopt PROMPT_SUBST
 setopt rmstarsilent
 
-autoload -Uz compinit && compinit
+# autoload -Uz compinit && compinit
+# autoload -Uz bashcompinit && bashcompinit
 autoload -Uz promptinit && promptinit
-autoload -Uz bashcompinit && bashcompinit
 
 HISTSIZE=5000
 HISTFILE=~/.zsh_history
@@ -64,5 +65,6 @@ source ~/.steve_functions.sh
 # Update Homebrew and delete local snapshots
 WeeklyUpdate
 
-eval "$(register-python-argcomplete pipx)"
+# eval "$(register-python-argcomplete pipx)"
 eval "$(starship init zsh)"
+# zprof

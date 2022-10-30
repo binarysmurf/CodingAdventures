@@ -67,8 +67,7 @@ alias ta='tmux attach'
 # Editor related.
 
 alias mc='micro'
-# alias bb='bbedit'
-# alias nv='nvim'
+alias nv='nvim'
 alias ed='${EDITOR}'
 alias sm="export EDITOR='micro'"
 alias sn="export EDITOR='nvim'"

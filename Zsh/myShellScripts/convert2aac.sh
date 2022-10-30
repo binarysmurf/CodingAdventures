@@ -1,3 +1,4 @@
+#!/bin/bash
 #  Convert misc audio > aac
 #
 # - Steve. May '22
