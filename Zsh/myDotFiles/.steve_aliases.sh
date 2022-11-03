@@ -24,7 +24,7 @@ alias dl='cd ~/Downloads;clear'
 alias bd='cd ~/.bin;clear'
 alias px='cd ~/Pictures;clear'
 alias gd='cd ~/Geekery/Github;clear'
-alias pd='cd ~/Geekery/Python;clear'
+alias pd='cd ~/Geekery/Coding/Python;clear'
 alias ld='cd ~/Geekery/Linux;clear'
 
 alias hg='history | grep'
