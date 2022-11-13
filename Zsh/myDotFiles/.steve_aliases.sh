@@ -67,10 +67,10 @@ alias ta='tmux attach'
 # Editor related.
 
 alias mc='micro'
-alias nv='nvim'
+
 alias ed='${EDITOR}'
 alias sm="export EDITOR='micro'"
-alias sn="export EDITOR='nvim'"
+alias shx="export EDITOR='hx'"
 
 alias mhdd='sudo mkdir /Volumes/EFI_HDD; sudo mount -t msdos /dev/disk1s1 /Volumes/EFI_HDD'
 alias mssd='sudo mkdir /Volumes/EFI_SSD; sudo mount -t msdos /dev/disk0s1 /Volumes/EFI_SSD'

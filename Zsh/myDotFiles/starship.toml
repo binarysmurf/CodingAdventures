@@ -1,5 +1,6 @@
 add_newline = false
 command_timeout = 1000
+
 [character]
 success_symbol = "[√>](bold #ffbb6c)"
 error_symbol = "[√>](bold red)"

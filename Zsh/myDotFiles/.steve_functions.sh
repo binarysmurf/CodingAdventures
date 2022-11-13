@@ -34,7 +34,7 @@ WeeklyUpdate()
 	wday=$(date "+%a")  
 
 	
-	if [[ ($wday == Sun) || ($1 == force) ]]; then # Is it Sunday, or am I forcing an update?
+	if [[ ($wday == Sun) || ($1 == force) ]]; then # a) Is it Sunday, or b) am I forcing an update?
 		if [ -f ~/.updatedone ]; then # Have we previously updated today? Exit!
 			return
 		else						# Otherwise, do the update.. 
