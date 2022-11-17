@@ -10,12 +10,12 @@ disabled = false
 format = '[\[$status - $common_meaning\]](yellow) '
 
 [time]
-disabled = false 
-style = "bold #d58a69"
+disabled = false
+style = "bold #00d7ff"
 
 [directory]
 truncation_length = 10
 truncate_to_repo = false
-style = "bold #ffbb6c"
+style = "bold #5fafff"
 
 format = "[$time:$path]($style) [$read_only]($read_only_style)"

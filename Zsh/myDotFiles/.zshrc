@@ -28,11 +28,10 @@ export HOMEBREW_NO_ENV_HINTS=true
 export HOMEBREW_NO_ANALYTICS=1
 export MANPAGER="zsh -c 'col -bx | bat -l man -p'"
 export MANPATH="/usr/local/man:$MANPATH"
-export EDITOR="micro"
+export EDITOR="nvim"
 export MICRO_TRUECOLOR=1
 export LESSHISTFILE=-
 export LESS="-SXIFRs"
-
 
 export LDFLAGS="-L/usr/local/opt/ruby/lib"
 export CPPFLAGS="-I/usr/local/opt/ruby/include"
@@ -59,8 +58,8 @@ source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 test -e /Users/stevie/.iterm2_shell_integration.zsh && source /Users/stevie/.iterm2_shell_integration.zsh || true
 
 # My personal aliases and functions.
-source ~/.steve_aliases.sh
-source ~/.steve_functions.sh
+source ~/.my_functions.sh
+source ~/.my_aliases.sh
 
 # Update Homebrew and delete local snapshots
 WeeklyUpdate
