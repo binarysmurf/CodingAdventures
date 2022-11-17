@@ -13,6 +13,7 @@
 # @raycast.author Steve
 
 cp ~/.config/starship.toml ~/Geekery/Github/CodingAdventures/Zsh/myDotFiles
+cp ~/.config/nvim/init.vim ~/Geekery/Github/CodingAdventures/Zsh/myDotFiles
 cp ~/.exrc ~/Geekery/Github/CodingAdventures/Zsh/myDotFiles
 cp ~/.my_aliases.sh ~/Geekery/Github/CodingAdventures/Zsh/myDotFiles
 cp ~/.my_functions.sh ~/Geekery/Github/CodingAdventures/Zsh/myDotFiles

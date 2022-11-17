@@ -103,8 +103,8 @@ alias pa='pip-autoremove'
 # Edit/reload .dotfiles.
 	
 alias ez='${EDITOR} ${ZDOTDIR:-$HOME}/.zshrc' # Edit zsh config
-alias ea='${EDITOR} ${ZDOTDIR:-$HOME}/.steve_aliases.sh' # Edit personalised aliases
-alias ef='${EDITOR} ${ZDOTDIR:-$HOME}/.steve_functions.sh' # Edit personalised functions
+alias ea='${EDITOR} ${ZDOTDIR:-$HOME}/.my_aliases.sh' # Edit personalised aliases
+alias ef='${EDITOR} ${ZDOTDIR:-$HOME}/.my_functions.sh' # Edit personalised functions
 alias sz='source ~/.zshrc; clear' # Reload zsh config, which references all of the above .dotfiles
 
 # Find Wifi and hardwired IP.

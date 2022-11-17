@@ -26,7 +26,7 @@ WeeklyUpdate()
 # v1.0: This function updates my package manager & relevant packages weekly on a Sunday, and only runs once rather than 
 # every time I open a terminal that day.
 #
-# v1.1: Added deletion of local snapshots and the 'force' argument so I can run the function manually regardless of weekday.
+# v1.1: Added deletion of local snapshots and the 'force' argument so I can run the function any time.
 #
 
 
