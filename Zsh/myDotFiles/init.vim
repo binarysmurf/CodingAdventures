@@ -17,20 +17,23 @@ set ignorecase
 set smartcase
 set cursorcolumn
 set cursorline
-:highlight Cursorline cterm=bold ctermbg=black
-:highlight CursorLineNr term=bold cterm=bold ctermfg=012 gui=bold
-if !has('gui_running')
-        set t_Co=256
-endif
+set splitright
+set splitbelow
+
 set termguicolors
 colorscheme darkblue
+
 :map <C-s> :w<CR>
 :map <C-q> :q<CR>
-:map <C-h> :nohl<CR>
-:map <C-H> :hl<CR>
+:map <C-H> :nohl<CR>
+:map <C-v> :vsplit<CR>
+:map <C-h> :split<CR>
 
-call plug#begin(has('nvim') ? stdpath('data') . '/plugged' : '~/.vim/plugged')
+call plug#begin('~/.config/nvim/plugz')
     Plug 'jiangmiao/auto-pairs'
     Plug 'itchyny/lightline.vim'
+    Plug 'frazrepo/vim-rainbow'
 call plug#end()
-let g:lightline = { 'colorscheme': 'nord'}
+
+let g:lightline = { 'colorscheme': 'Tomorrow_Night_Blue'}
+let g:rainbow_active = 1
