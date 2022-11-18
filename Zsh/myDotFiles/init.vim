@@ -33,7 +33,9 @@ call plug#begin('~/.config/nvim/plugz')
     Plug 'jiangmiao/auto-pairs'
     Plug 'itchyny/lightline.vim'
     Plug 'frazrepo/vim-rainbow'
+    Plug 'vim-python/python-syntax'
 call plug#end()
 
 let g:lightline = { 'colorscheme': 'Tomorrow_Night_Blue'}
 let g:rainbow_active = 1
+let g:python_highlight_all = 1

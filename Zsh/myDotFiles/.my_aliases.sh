@@ -105,6 +105,7 @@ alias pa='pip-autoremove'
 alias ez='${EDITOR} ${ZDOTDIR:-$HOME}/.zshrc' # Edit zsh config
 alias ea='${EDITOR} ${ZDOTDIR:-$HOME}/.my_aliases.sh' # Edit personalised aliases
 alias ef='${EDITOR} ${ZDOTDIR:-$HOME}/.my_functions.sh' # Edit personalised functions
+alias ei='${EDITOR} ${ZDOTDIR:-$HOME}/.config/nvim/init.vim' # Neovim init file.
 alias sz='source ~/.zshrc; clear' # Reload zsh config, which references all of the above .dotfiles
 
 # Find Wifi and hardwired IP.
