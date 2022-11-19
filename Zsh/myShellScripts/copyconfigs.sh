@@ -12,15 +12,15 @@
 # @raycast.description Copy configs etc
 # @raycast.author Steve
 
-cp ~/.config/starship.toml ~/Geekery/Github/CodingAdventures/Zsh/myDotFiles
-cp ~/.config/nvim/init.vim ~/Geekery/Github/CodingAdventures/Zsh/myDotFiles
-cp ~/.exrc ~/Geekery/Github/CodingAdventures/Zsh/myDotFiles
-cp ~/.my_aliases.sh ~/Geekery/Github/CodingAdventures/Zsh/myDotFiles
-cp ~/.my_functions.sh ~/Geekery/Github/CodingAdventures/Zsh/myDotFiles
-cp ~/.zshrc ~/Geekery/Github/CodingAdventures/Zsh/myDotFiles
-cp ~/.zprofile ~/Geekery/Github/CodingAdventures/Zsh/myDotFiles
-cp ~/.fzf.zsh ~/Geekery/Github/CodingAdventures/Zsh/myDotFiles
-cp ~/.tmux.conf.local ~/Geekery/Github/CodingAdventures/Zsh/myDotFiles
+cp ~/.config/starship.toml ~/Geekery/Github/CodingAdventures/Zsh/myConfigFiles
+cp ~/.config/nvim/init.vim ~/Geekery/Github/CodingAdventures/Zsh/myConfigFiles
+cp ~/.exrc ~/Geekery/Github/CodingAdventures/Zsh/myConfigFiles
+cp ~/.my_aliases.sh ~/Geekery/Github/CodingAdventures/Zsh/myConfigFiles
+cp ~/.my_functions.sh ~/Geekery/Github/CodingAdventures/Zsh/myConfigFiles
+cp ~/.zshrc ~/Geekery/Github/CodingAdventures/Zsh/myConfigFiles
+cp ~/.zprofile ~/Geekery/Github/CodingAdventures/Zsh/myConfigFiles
+cp ~/.fzf.zsh ~/Geekery/Github/CodingAdventures/Zsh/myConfigFiles
+cp ~/.tmux.conf.local ~/Geekery/Github/CodingAdventures/Zsh/myConfigFiles
 
 # Also copy current active shell scripts.
 
