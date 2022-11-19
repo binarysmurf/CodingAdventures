@@ -1,3 +1,6 @@
+
+" Various Neovim settings
+
 set mouse=a
 set number
 set relativenumber
@@ -21,21 +24,47 @@ set splitright
 set splitbelow
 
 set termguicolors
-colorscheme darkblue
+
+" Kep mappings
 
 :map <C-s> :w<CR>
 :map <C-q> :q<CR>
+:map <C-x> :q!<CR>
 :map <C-H> :nohl<CR>
 :map <C-v> :vsplit<CR>
 :map <C-h> :split<CR>
 
+" Plug-ins
+ 
 call plug#begin('~/.config/nvim/plugz')
+
+" Purely cosmetic
+
+    Plug 'arcticicestudio/nord-vim'
+    Plug 'joshdick/onedark.vim'
+    Plug 'sam4llis/nvim-tundra' " vim-plug
+    
+" Actually useful
+
     Plug 'jiangmiao/auto-pairs'
     Plug 'itchyny/lightline.vim'
     Plug 'frazrepo/vim-rainbow'
-    Plug 'vim-python/python-syntax'
+    Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+    Plug 'zchee/deoplete-jedi'
+    Plug 'sbdchd/neoformat'
+    Plug 'machakann/vim-highlightedyank'
+
 call plug#end()
 
-let g:lightline = { 'colorscheme': 'Tomorrow_Night_Blue'}
+colorscheme tundra
+
+let g:lightline = { 'colorscheme': 'onedark'}
 let g:rainbow_active = 1
-let g:python_highlight_all = 1
+let g:deoplete#enable_at_startup = 1
+let g:highlightedyank_highlight_duration = 1800
+
+" Below should be fucking superfluous
+
+let g:loaded_perl_provider = 0
+let g:loaded_node_provider = 0
+let g:loaded_ruby_provider = 0

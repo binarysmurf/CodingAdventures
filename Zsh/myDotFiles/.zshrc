@@ -46,6 +46,7 @@ export PATH="$PATH:/Users/stevie/.local/bin"
 
 # Don't ask me what this does. It cleans up your $PATH enviroment variable via some black magic fuckery.
 
+export PATH="$PATH:/Library/Frameworks/Python.framework/Versions/3.10/bin"
 export PATH="$(perl -e 'print join(":", grep { not $seen{$_}++ } split(/:/, $ENV{PATH}))')"
 
 # Must have zsh plugins

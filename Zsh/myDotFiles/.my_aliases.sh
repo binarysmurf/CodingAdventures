@@ -13,6 +13,7 @@ alias ll='lsd -l'
 alias la='lsd -lA'
 alias lt='lsd -l --total-size --sizesort'
 alias lta='lsd -lA --total-size --sizesort'
+alias ltt='lsd -l --total-size --sizesort | head -n 10'
 
 # General QoL
 
