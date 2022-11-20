@@ -28,13 +28,25 @@ end
 
 return packer.startup(function(use)
     use("wbthomason/packer.nvim")
+
+-- 
+-- Purely cosmetic.
+--
+
     use("arcticicestudio/nord-vim")
     use("joshdick/onedark.vim")
+    use {
+            'nvim-lualine/lualine.nvim',
+            requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+        }
+---
+--- Actually useful
+--- 
     use("jiangmiao/auto-pairs")
     use("frazrepo/vim-rainbow")
     use("sbdchd/neoformat")
-    use("machakann/vim-highlightedyank")
-    use("itchyny/lightline.vim")
+    use('Shougo/deoplete.nvim')
+    use('zchee/deoplete-jedi')
 
     if packer_bootstrap then
         require("packer").sync()

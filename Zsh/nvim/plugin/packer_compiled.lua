@@ -79,10 +79,20 @@ _G.packer_plugins = {
     path = "/Users/stevie/.local/share/nvim/site/pack/packer/start/auto-pairs",
     url = "https://github.com/jiangmiao/auto-pairs"
   },
-  ["lightline.vim"] = {
+  ["deoplete-jedi"] = {
     loaded = true,
-    path = "/Users/stevie/.local/share/nvim/site/pack/packer/start/lightline.vim",
-    url = "https://github.com/itchyny/lightline.vim"
+    path = "/Users/stevie/.local/share/nvim/site/pack/packer/start/deoplete-jedi",
+    url = "https://github.com/zchee/deoplete-jedi"
+  },
+  ["deoplete.nvim"] = {
+    loaded = true,
+    path = "/Users/stevie/.local/share/nvim/site/pack/packer/start/deoplete.nvim",
+    url = "https://github.com/Shougo/deoplete.nvim"
+  },
+  ["lualine.nvim"] = {
+    loaded = true,
+    path = "/Users/stevie/.local/share/nvim/site/pack/packer/start/lualine.nvim",
+    url = "https://github.com/nvim-lualine/lualine.nvim"
   },
   neoformat = {
     loaded = true,
@@ -94,6 +104,12 @@ _G.packer_plugins = {
     path = "/Users/stevie/.local/share/nvim/site/pack/packer/start/nord-vim",
     url = "https://github.com/arcticicestudio/nord-vim"
   },
+  ["nvim-web-devicons"] = {
+    loaded = false,
+    needs_bufread = false,
+    path = "/Users/stevie/.local/share/nvim/site/pack/packer/opt/nvim-web-devicons",
+    url = "https://github.com/kyazdani42/nvim-web-devicons"
+  },
   ["onedark.vim"] = {
     loaded = true,
     path = "/Users/stevie/.local/share/nvim/site/pack/packer/start/onedark.vim",
@@ -103,11 +119,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/stevie/.local/share/nvim/site/pack/packer/start/packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
-  },
-  ["vim-highlightedyank"] = {
-    loaded = true,
-    path = "/Users/stevie/.local/share/nvim/site/pack/packer/start/vim-highlightedyank",
-    url = "https://github.com/machakann/vim-highlightedyank"
   },
   ["vim-rainbow"] = {
     loaded = true,
