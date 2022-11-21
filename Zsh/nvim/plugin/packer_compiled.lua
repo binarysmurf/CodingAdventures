@@ -74,20 +74,20 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  ["Comment.nvim"] = {
+    loaded = true,
+    path = "/Users/stevie/.local/share/nvim/site/pack/packer/start/Comment.nvim",
+    url = "https://github.com/numToStr/Comment.nvim"
+  },
   ["auto-pairs"] = {
     loaded = true,
     path = "/Users/stevie/.local/share/nvim/site/pack/packer/start/auto-pairs",
     url = "https://github.com/jiangmiao/auto-pairs"
   },
-  ["deoplete-jedi"] = {
+  ["dracula.nvim"] = {
     loaded = true,
-    path = "/Users/stevie/.local/share/nvim/site/pack/packer/start/deoplete-jedi",
-    url = "https://github.com/zchee/deoplete-jedi"
-  },
-  ["deoplete.nvim"] = {
-    loaded = true,
-    path = "/Users/stevie/.local/share/nvim/site/pack/packer/start/deoplete.nvim",
-    url = "https://github.com/Shougo/deoplete.nvim"
+    path = "/Users/stevie/.local/share/nvim/site/pack/packer/start/dracula.nvim",
+    url = "https://github.com/Mofiqul/dracula.nvim"
   },
   ["lualine.nvim"] = {
     loaded = true,
@@ -104,10 +104,14 @@ _G.packer_plugins = {
     path = "/Users/stevie/.local/share/nvim/site/pack/packer/start/nord-vim",
     url = "https://github.com/arcticicestudio/nord-vim"
   },
+  ["nvim-tree.lua"] = {
+    loaded = true,
+    path = "/Users/stevie/.local/share/nvim/site/pack/packer/start/nvim-tree.lua",
+    url = "https://github.com/nvim-tree/nvim-tree.lua"
+  },
   ["nvim-web-devicons"] = {
-    loaded = false,
-    needs_bufread = false,
-    path = "/Users/stevie/.local/share/nvim/site/pack/packer/opt/nvim-web-devicons",
+    loaded = true,
+    path = "/Users/stevie/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
     url = "https://github.com/kyazdani42/nvim-web-devicons"
   },
   ["onedark.vim"] = {
@@ -119,6 +123,21 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/stevie/.local/share/nvim/site/pack/packer/start/packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
+  },
+  ["plenary.nvim"] = {
+    loaded = true,
+    path = "/Users/stevie/.local/share/nvim/site/pack/packer/start/plenary.nvim",
+    url = "https://github.com/nvim-lua/plenary.nvim"
+  },
+  ["telescope-fzf-native.nvim"] = {
+    loaded = true,
+    path = "/Users/stevie/.local/share/nvim/site/pack/packer/start/telescope-fzf-native.nvim",
+    url = "https://github.com/nvim-telescope/telescope-fzf-native.nvim"
+  },
+  ["telescope.nvim"] = {
+    loaded = true,
+    path = "/Users/stevie/.local/share/nvim/site/pack/packer/start/telescope.nvim",
+    url = "https://github.com/nvim-telescope/telescope.nvim"
   },
   ["vim-rainbow"] = {
     loaded = true,
