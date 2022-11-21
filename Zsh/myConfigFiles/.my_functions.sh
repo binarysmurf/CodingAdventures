@@ -22,6 +22,7 @@ up ()
 
 WeeklyUpdate()
 {
+
 #
 # v1.0: This function updates my package manager & relevant packages weekly on a Sunday, and only runs once rather than 
 # every time I open a terminal that day.
