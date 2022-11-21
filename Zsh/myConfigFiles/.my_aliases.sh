@@ -10,6 +10,7 @@ alias oll='/bin/ls -l'
 
 alias ls='lsd'
 alias ll='lsd -l'
+alias kk='lsd -l'
 alias la='lsd -lA'
 alias lt='lsd -l --total-size --sizesort'
 alias lta='lsd -lA --total-size --sizesort'
@@ -124,7 +125,6 @@ alias bra='brew autoremove'
 alias bbd='brew bundle dump'
 alias brcl='brew cleanup --prune=all;brew autoremove'
 alias medic='brew cleanup --prune=all; brew doctor'
-
 
 # Misc.
 

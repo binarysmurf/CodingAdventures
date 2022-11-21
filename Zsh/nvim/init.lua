@@ -2,19 +2,25 @@ require("stevie.plugins-setup")
 require("stevie.core.options")
 require("stevie.core.keymaps")
 require("stevie.core.colorscheme")
-require("stevie.plugins.lualine")
 require("stevie.plugins.comment")
 require("stevie.plugins.nvim-tree")
-require("stevie.plugins.Telescope")
--- require("stevie.plugins.nvim-cmp")
+require("stevie.plugins.lualine")
+require("stevie.plugins.telescope")
+require("stevie.plugins.nvim-cmp")
+require("stevie.plugins.lsp.mason")
+require("stevie.plugins.lsp.lspsaga")
+require("stevie.plugins.lsp.lspconfig")
+require("stevie.plugins.lsp.null-ls")
+require("stevie.plugins.autopairs")
+require("stevie.plugins.treesitter")
+require("stevie.plugins.gitsigns")
 
-vim.cmd[[
+vim.cmd([[
 augroup highlight_yank
 autocmd!
 au TextYankPost * silent! lua vim.highlight.on_yank({timeout=2000})
 augroup END
-]]
-
+]])
 
 -- Setting some globals to satisfy :checkhealth
 
