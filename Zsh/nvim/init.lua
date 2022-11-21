@@ -15,6 +15,9 @@ require("stevie.plugins.autopairs")
 require("stevie.plugins.treesitter")
 require("stevie.plugins.gitsigns")
 
+-- Added by stevie
+-- turns on highlight_yank, thereby saving a plugin installation
+
 vim.cmd([[
 augroup highlight_yank
 autocmd!
