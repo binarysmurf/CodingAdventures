@@ -98,11 +98,51 @@ return packer.startup(function(use)
 	use({ "windwp/nvim-ts-autotag", after = "nvim-treesitter" }) -- autoclose tags
 
 	-- git integration
-	use("lewis6991/gitsigns.nvim") -- show line modifications on left hand side
 	use("frazrepo/vim-rainbow")
 	use("sbdchd/neoformat")
 	use("joshdick/onedark.vim")
+	use("lewis6991/gitsigns.nvim") -- show line modifications on left hand side
+	use({
+		"lewis6991/hover.nvim",
+		config = function()
+			require("hover").setup({
+				init = function()
+					-- Require providers
+					require("hover.providers.lsp")
+					require("hover.providers.gh")
+					-- require('hover.providers.jira')
+					-- require('hover.providers.man')
+					-- require('hover.providers.dictionary')
+				end,
+				preview_opts = {
+					border = nil,
+				},
+				-- Whether the contents of a currently open hover window should be moved
+				-- to a :h preview-window when pressing the hover keymap.
+				preview_window = false,
+				title = true,
+			})
 
+			-- Setup keymaps
+			vim.keymap.set("n", "K", require("hover").hover, { desc = "hover.nvim" })
+			vim.keymap.set("n", "gK", require("hover").hover_select, { desc = "hover.nvim (select)" })
+		end,
+	})
+	use("darfink/vim-plist")
+	use("lewis6991/impatient.nvim")
+	use({
+		"goolord/alpha-nvim",
+		requires = { "kyazdani42/nvim-web-devicons" },
+		config = function()
+			require("alpha").setup(require("alpha.themes.startify").config)
+		end,
+	})
+	use({
+		"https://git.sr.ht/~whynothugo/lsp_lines.nvim",
+		config = function()
+			require("lsp_lines").setup()
+		end,
+	})
 	if packer_bootstrap then
 		require("packer").sync()
 	end

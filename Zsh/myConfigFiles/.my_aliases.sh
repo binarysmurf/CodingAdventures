@@ -124,7 +124,7 @@ alias brrm='brew uninstall'
 alias bra='brew autoremove'
 alias bbd='brew bundle dump'
 alias brcl='brew cleanup --prune=all;brew autoremove'
-alias medic='brew cleanup --prune=all; brew doctor'
+alias medic='brew doctor'
 
 # Misc.
 

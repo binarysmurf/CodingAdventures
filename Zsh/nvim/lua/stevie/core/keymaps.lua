@@ -16,6 +16,7 @@ key.set("n", "<leader>tx", ":tabclose<CR>")
 key.set("n", "<leader>tn", ":tabn<CR>")
 key.set("n", "<leader>tp", ":tabp<CR>")
 key.set("n", "<leader>f", ":NvimTreeToggle<CR>")
+key.set("n", "<leader>nf", ":Neoformat<CR>")
 
 key.set("n", "<leader>ff", "<cmd>Telescope find_files<cr>") -- find files within current working directory, respects .gitignore
 key.set("n", "<leader>fs", "<cmd>Telescope live_grep<cr>") -- find string in current working directory as you type
