@@ -5,18 +5,18 @@ local key = vim.keymap
 key.set("n", "<C-s>", ":w<CR>")
 key.set("n", "<C-q>", ":q<CR>")
 key.set("n", "<C-x>", ":q!<CR>")
+key.set("n", "<leader>X", ":qa!<CR>")
 key.set("n", "<leader>nh", ":nohl<CR>")
 key.set("n", "<leader>sv", "<C-w>v")
 key.set("n", "<leader>sh", "<C-w>s")
 key.set("n", "<leader>se", "<C-w>=")
 key.set("n", "<leader>sx", ":close<CR>")
 
-key.set("n", "<leader>to", ":tabnew<CR>")
+key.set("n", "<leader>tn", ":tabnew<CR>")
 key.set("n", "<leader>tx", ":tabclose<CR>")
-key.set("n", "<leader>tn", ":tabn<CR>")
-key.set("n", "<leader>tp", ":tabp<CR>")
+key.set("n", "<leader>[", ":tabn<CR>")
+key.set("n", "<leader>]", ":tabp<CR>")
 key.set("n", "<leader>f", ":NvimTreeToggle<CR>")
-key.set("n", "<leader>nf", ":Neoformat<CR>")
 
 key.set("n", "<leader>ff", "<cmd>Telescope find_files<cr>") -- find files within current working directory, respects .gitignore
 key.set("n", "<leader>fs", "<cmd>Telescope live_grep<cr>") -- find string in current working directory as you type
