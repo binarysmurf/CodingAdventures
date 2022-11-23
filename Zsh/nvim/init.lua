@@ -1,4 +1,3 @@
-require("dap-python").setup("~/.venv/debugpy/bin/python")
 require("lsp_lines")
 require("impatient")
 require("stevie.modules-setup")
