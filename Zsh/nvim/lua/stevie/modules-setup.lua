@@ -32,10 +32,7 @@ return packer.startup(function(use)
 	use("wbthomason/packer.nvim")
 	use("nvim-lua/plenary.nvim") -- lua functions that many plugins use
 
-	use("bluz71/vim-nightfly-guicolors") -- preferred colorscheme
 	use("ellisonleao/gruvbox.nvim")
-	use("christoomey/vim-tmux-navigator") -- tmux & split window navigation
-	use("szw/vim-maximizer") -- maximizes and restores current window
 	use("norcalli/nvim-colorizer.lua")
 
 	-- essential plugins
@@ -128,20 +125,6 @@ return packer.startup(function(use)
 	})
 	use("darfink/vim-plist")
 	use("lewis6991/impatient.nvim")
-	use({
-		"goolord/alpha-nvim",
-		requires = { "kyazdani42/nvim-web-devicons" },
-		config = function()
-			require("alpha").setup(require("alpha.themes.startify").config)
-		end,
-	})
-	use({
-		"https://git.sr.ht/~whynothugo/lsp_lines.nvim",
-		config = function()
-			require("lsp_lines").setup()
-		end,
-	})
-
 	if packer_bootstrap then
 		require("packer").sync()
 	end

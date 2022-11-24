@@ -1,4 +1,3 @@
-require("lsp_lines")
 require("impatient")
 require("stevie.modules-setup")
 require("stevie.core.options")

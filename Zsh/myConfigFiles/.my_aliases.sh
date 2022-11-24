@@ -70,7 +70,7 @@ alias ta='tmux attach'
 
 # Editor related.
 
-alias mc='micro'
+alias mic='micro'
 alias nv='nvim'
 
 alias ed='${EDITOR}'
