@@ -92,6 +92,7 @@ alias gs='google-search.sh'
 alias icat='imgcat.sh'
 alias uv='upscale.sh'
 alias mp='man_preview.sh'
+alias ffcl='ffcl.sh'
 alias css='cp ~/.bin/*.sh ~/Geekery/Github/CodingAdventures/Zsh/myShellScripts/'
 alias gl='glances -2'
 

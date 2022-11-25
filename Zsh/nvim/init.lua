@@ -1,3 +1,6 @@
+-- Added by stevie
+-- load settings & plugins
+
 require("impatient")
 require("stevie.modules-setup")
 require("stevie.core.options")
@@ -16,12 +19,10 @@ require("stevie.modules.autopairs")
 require("stevie.modules.treesitter")
 require("stevie.modules.gitsigns")
 
--- Added by stevie
+-- I'm guessing everything below could be written in 'options.lua' instead
+-- but this is working, so I shall fuck with it not.
+
 -- turns on highlight_yank, thereby avoiding a plugin installation
-
-vim.opt.termguicolors = true
-require("colorizer").setup()
-
 vim.cmd([[
 augroup highlight_yank
 autocmd!
@@ -41,3 +42,7 @@ vim.g.plist_display_format = "xml"
 vim.diagnostic.config({
 	virtual_text = false,
 })
+vim.g.neovide_traansparency = 0.8
+
+vim.opt.termguicolors = true
+require("colorizer").setup()
