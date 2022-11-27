@@ -6,7 +6,7 @@ key.set("n", "<C-s>", ":w<CR>")
 key.set("n", "<C-q>", ":q<CR>")
 key.set("n", "<C-x>", ":q!<CR>")
 key.set("n", "<leader>X", ":qa!<CR>")
-key.set("n", "<leader>nh", ":nohl<CR>")
+key.set("n", "<leader>h", ":nohl<CR>")
 key.set("n", "<leader>se", "<C-w>=")
 key.set("n", "<leader>sx", ":close<CR>")
 

@@ -22,7 +22,30 @@ opt.cursorline = true
 opt.cursorcolumn = true
 opt.splitright = true
 opt.splitbelow = true
--- opt.termguicolors = true --  moved to init.lua to enable plugin
 opt.background = "dark"
 opt.signcolumn = "yes"
 opt.backspace = "indent,eol,start"
+
+-- turns on highlight_yank, thereby avoiding a plugin installation
+vim.cmd([[
+augroup highlight_yank
+autocmd!
+au TextYankPost * silent! lua vim.highlight.on_yank({timeout=2000})
+augroup END
+]])
+
+-- Setting some globals to satisfy :checkhealth
+
+vim.g.spelllang = "en"
+vim.g.spell = 1
+vim.g.loaded_ruby_provider = 0
+vim.g.loaded_node_provider = 0
+vim.g.loaded_perl_provider = 0
+vim.g.python3_host_prog = "/Library/Frameworks/Python.framework/Versions/3.10/bin/python3"
+vim.g.plist_display_format = "xml"
+vim.diagnostic.config({
+	virtual_text = false,
+})
+
+vim.g.neovide_transparency = 0.8
+vim.opt.termguicolors = true
