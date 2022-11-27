@@ -1,0 +1,21 @@
+add_newline = false
+command_timeout = 1000
+
+[character]
+success_symbol = "[√>](#ebdcc2)"
+error_symbol = "[√>](#fabd2f)"
+
+[status]
+disabled = false
+format = '[\[$status - $common_meaning\]](yellow) '
+
+[time]
+disabled = false
+style = "bold #d65d0e"
+
+[directory]
+truncation_length = 10
+truncate_to_repo = false
+style = "bold #fe8019"
+
+format = "[$time:$path]($style) [$read_only]($read_only_style)"

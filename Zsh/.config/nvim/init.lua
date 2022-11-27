@@ -1,0 +1,21 @@
+-- Added by stevie
+-- load settings & plugins
+
+require("stevie.modules-setup")
+require("stevie.core.options")
+require("stevie.core.keymaps")
+require("stevie.core.colorscheme")
+require("impatient")
+require("colorizer").setup()
+require("stevie.modules.comment")
+require("stevie.modules.nvim-tree")
+require("stevie.modules.lualine")
+require("stevie.modules.telescope")
+require("stevie.modules.nvim-cmp")
+require("stevie.modules.lsp.mason")
+require("stevie.modules.lsp.lspsaga")
+require("stevie.modules.lsp.lspconfig")
+require("stevie.modules.lsp.null-ls")
+require("stevie.modules.autopairs")
+require("stevie.modules.treesitter")
+require("stevie.modules.gitsigns")
