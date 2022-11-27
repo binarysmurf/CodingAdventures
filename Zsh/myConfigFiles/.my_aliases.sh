@@ -108,7 +108,7 @@ alias pa='pip-autoremove'
 alias ez='${EDITOR} ${ZDOTDIR:-$HOME}/.zshrc' # Edit zsh config
 alias ea='${EDITOR} ${ZDOTDIR:-$HOME}/.my_aliases.sh' # Edit personalised aliases
 alias ef='${EDITOR} ${ZDOTDIR:-$HOME}/.my_functions.sh' # Edit personalised functions
-alias ei='${EDITOR} ${ZDOTDIR:-$HOME}/.config/nvim/init.vim' # Neovim init file.
+alias ei='${EDITOR} ${ZDOTDIR:-$HOME}/.config/nvim/init.lua' # Neovim init file.
 alias sz='source ~/.zshrc; clear' # Reload zsh config, which references all of the above .dotfiles
 
 # Find Wifi and hardwired IP.
@@ -128,6 +128,8 @@ alias brcl='brew cleanup --prune=all;brew autoremove'
 alias medic='brew doctor'
 
 # Misc.
+
+alias wcd='world-cup-2022-cli-dashboard'
 
 alias imgdim='sips -g pixelHeight -g pixelWidth'
 alias pcolors='for i in {0..255}; do print -Pn "%K{$i}  %k%F{$i}${(l:3::0:)i}%f " ${${(M)$((i%6)):#3}:+$'\n'}; done'
