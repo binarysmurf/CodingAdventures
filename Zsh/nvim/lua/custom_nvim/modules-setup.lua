@@ -16,7 +16,7 @@ local packer_bootstrap = ensure_packer() -- true if packer was just installed
 vim.cmd([[ 
   augroup packer_user_config
     autocmd!
-    autocmd BufWritePost plugins-setup.lua source <afile> | PackerSync
+    autocmd BufWritePost modules-setup.lua source <afile> | PackerSync
   augroup end
 ]])
 
@@ -30,14 +30,10 @@ end
 return packer.startup(function(use)
 	-- packer can manage itself
 	use("wbthomason/packer.nvim")
-
 	use("nvim-lua/plenary.nvim") -- lua functions that many plugins use
 
-	use("bluz71/vim-nightfly-guicolors") -- preferred colorscheme
-
-	use("christoomey/vim-tmux-navigator") -- tmux & split window navigation
-
-	use("szw/vim-maximizer") -- maximizes and restores current window
+	use("ellisonleao/gruvbox.nvim")
+	use("norcalli/nvim-colorizer.lua")
 
 	-- essential plugins
 	use("tpope/vim-surround") -- add, delete, change surroundings (it's awesome)
@@ -77,7 +73,6 @@ return packer.startup(function(use)
 	use("neovim/nvim-lspconfig") -- easily configure language servers
 	use("hrsh7th/cmp-nvim-lsp") -- for autocompletion
 	use({ "glepnir/lspsaga.nvim", branch = "main" }) -- enhanced lsp uis
-	use("jose-elias-alvarez/typescript.nvim") -- additional functionality for typescript server (e.g. rename file & update imports)
 	use("onsails/lspkind.nvim") -- vs-code like icons for autocompletion
 
 	-- formatting & linting
@@ -130,19 +125,8 @@ return packer.startup(function(use)
 	})
 	use("darfink/vim-plist")
 	use("lewis6991/impatient.nvim")
-	use({
-		"goolord/alpha-nvim",
-		requires = { "kyazdani42/nvim-web-devicons" },
-		config = function()
-			require("alpha").setup(require("alpha.themes.startify").config)
-		end,
-	})
-	use({
-		"https://git.sr.ht/~whynothugo/lsp_lines.nvim",
-		config = function()
-			require("lsp_lines").setup()
-		end,
-	})
+	use("voldikss/vim-floaterm")
+
 	if packer_bootstrap then
 		require("packer").sync()
 	end
