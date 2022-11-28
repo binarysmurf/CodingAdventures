@@ -242,6 +242,11 @@ _G.packer_plugins = {
     path = "/Users/stevie/.local/share/nvim/site/pack/packer/start/vim-ReplaceWithRegister",
     url = "https://github.com/inkarkat/vim-ReplaceWithRegister"
   },
+  ["vim-floaterm"] = {
+    loaded = true,
+    path = "/Users/stevie/.local/share/nvim/site/pack/packer/start/vim-floaterm",
+    url = "https://github.com/voldikss/vim-floaterm"
+  },
   ["vim-plist"] = {
     loaded = true,
     path = "/Users/stevie/.local/share/nvim/site/pack/packer/start/vim-plist",
