@@ -126,6 +126,7 @@ return packer.startup(function(use)
 	use("darfink/vim-plist")
 	use("lewis6991/impatient.nvim")
 	use("voldikss/vim-floaterm")
+	use("bennyyip/vim-yapf")
 
 	if packer_bootstrap then
 		require("packer").sync()
