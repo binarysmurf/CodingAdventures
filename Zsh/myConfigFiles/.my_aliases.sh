@@ -15,6 +15,7 @@ alias la='lsd -lA'
 alias lt='lsd -l --total-size --sizesort'
 alias lta='lsd -lA --total-size --sizesort'
 alias ltt='lsd -l --total-size --sizesort | head -n 10'
+alias rmdir='sudo rm -rf'
 
 # General QoL
 
@@ -107,9 +108,11 @@ alias pa='pip-autoremove'
 	
 alias ez='${EDITOR} ${ZDOTDIR:-$HOME}/.zshrc' # Edit zsh config
 alias ea='${EDITOR} ${ZDOTDIR:-$HOME}/.my_aliases.sh' # Edit personalised aliases
+alias ec='nvim -S nvim_configs.vim'
 alias ef='${EDITOR} ${ZDOTDIR:-$HOME}/.my_functions.sh' # Edit personalised functions
 alias ei='${EDITOR} ${ZDOTDIR:-$HOME}/.config/nvim/init.lua' # Neovim init file.
 alias sz='source ~/.zshrc; clear' # Reload zsh config, which references all of the above .dotfiles
+alias nvi='neovide'
 
 # Find Wifi and hardwired IP.
 
@@ -135,5 +138,4 @@ alias imgdim='sips -g pixelHeight -g pixelWidth'
 alias pcolors='for i in {0..255}; do print -Pn "%K{$i}  %k%F{$i}${(l:3::0:)i}%f " ${${(M)$((i%6)):#3}:+$'\n'}; done'
 alias ot='other-transcode'
 alias yg='you-get'
-alias nvi='open -a Neovide'
 alias og='open -a gifski'

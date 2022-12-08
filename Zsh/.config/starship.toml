@@ -2,8 +2,8 @@ add_newline = false
 command_timeout = 1000
 
 [character]
-success_symbol = "[√>](#ebdcc2)"
-error_symbol = "[√>](#fabd2f)"
+success_symbol = "[√>](#97971a)"
+error_symbol = "[√>](#cc241d)"
 
 [status]
 disabled = false
@@ -11,11 +11,11 @@ format = '[\[$status - $common_meaning\]](yellow) '
 
 [time]
 disabled = false
-style = "bold #d65d0e"
+style = "bold #d3869b"
 
 [directory]
 truncation_length = 10
 truncate_to_repo = false
-style = "bold #fe8019"
+style = "bold #458588"
 
 format = "[$time:$path]($style) [$read_only]($read_only_style)"
