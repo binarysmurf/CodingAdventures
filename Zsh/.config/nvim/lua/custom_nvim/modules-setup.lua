@@ -9,6 +9,7 @@ local ensure_packer = function()
 	end
 	return false
 end
+
 local packer_bootstrap = ensure_packer() -- true if packer was just installed
 
 -- autocommand that reloads neovim and installs/updates/removes plugins

@@ -11,11 +11,11 @@ format = '[\[$status - $common_meaning\]](yellow) '
 
 [time]
 disabled = false
-style = "bold #d3869b"
+style = "bold #fabd2f"
 
 [directory]
 truncation_length = 10
 truncate_to_repo = false
-style = "bold #458588"
+style = "bold #b16286"
 
 format = "[$time:$path]($style) [$read_only]($read_only_style)"
