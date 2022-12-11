@@ -9,6 +9,7 @@ local ensure_packer = function()
 	end
 	return false
 end
+
 local packer_bootstrap = ensure_packer() -- true if packer was just installed
 
 -- autocommand that reloads neovim and installs/updates/removes plugins
@@ -126,6 +127,7 @@ return packer.startup(function(use)
 	use("darfink/vim-plist")
 	use("lewis6991/impatient.nvim")
 	use("voldikss/vim-floaterm")
+	use("bennyyip/vim-yapf")
 
 	if packer_bootstrap then
 		require("packer").sync()

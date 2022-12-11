@@ -261,6 +261,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/stevie/.local/share/nvim/site/pack/packer/start/vim-surround",
     url = "https://github.com/tpope/vim-surround"
+  },
+  ["vim-yapf"] = {
+    loaded = true,
+    path = "/Users/stevie/.local/share/nvim/site/pack/packer/start/vim-yapf",
+    url = "https://github.com/bennyyip/vim-yapf"
   }
 }
 

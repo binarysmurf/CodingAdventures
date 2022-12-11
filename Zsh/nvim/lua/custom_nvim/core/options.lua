@@ -25,6 +25,10 @@ opt.splitbelow = true
 opt.background = "dark"
 opt.signcolumn = "yes"
 opt.backspace = "indent,eol,start"
+opt.foldmethod = "expr"
+opt.foldexpr = "nvim_treesitter#foldexpr()"
+opt.foldlevel = 5
+opt.guifont = { "UbuntuMono Nerd Font", ":24" }
 
 -- turns on highlight_yank, thereby avoiding a plugin installation
 vim.cmd([[

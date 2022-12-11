@@ -4,6 +4,7 @@ local key = vim.keymap
 
 key.set("n", "<C-s>", ":w<CR>")
 key.set("n", "<C-q>", ":q<CR>")
+key.set("n", "<C-z>", ":qall!<CR>")
 key.set("n", "<C-x>", ":q!<CR>")
 key.set("n", "<leader>X", ":qa!<CR>")
 key.set("n", "<leader>h", ":nohl<CR>")
