@@ -34,6 +34,7 @@ return packer.startup(function(use)
 	use("nvim-lua/plenary.nvim") -- lua functions that many plugins use
 
 	use("ellisonleao/gruvbox.nvim")
+	use("Mofiqul/vscode.nvim")
 	use("norcalli/nvim-colorizer.lua")
 
 	-- essential plugins
@@ -128,6 +129,7 @@ return packer.startup(function(use)
 	use("lewis6991/impatient.nvim")
 	use("voldikss/vim-floaterm")
 	use("bennyyip/vim-yapf")
+	use("bluz71/vim-moonfly-colors")
 
 	if packer_bootstrap then
 		require("packer").sync()

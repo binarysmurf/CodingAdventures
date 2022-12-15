@@ -13,11 +13,12 @@ style = "bold red"
 error_symbol = "[✖](bold red) "
 
 [cmd_duration]
-min_time = 2_000  # Show command duration over 2000 milliseconds (=2 sec)
+min_time = 5_000  # Show command duration over 2000 milliseconds (=2 sec)
 format = " took [$duration]($style)"
 
 [directory]
-# truncation_length = 10
+truncation_length = 10
+truncate_to_repo = true
 format = "[$path]($style)[$lock_symbol]($lock_style) "
 
 [git_branch]
@@ -39,8 +40,8 @@ behind = "🐢 ×${count} "
 diverged = "🔱 🏎️ 💨 × ${ahead_count} 🐢 ×${behind_count} "
 untracked = "🛤️  × ${count} "
 stashed = "📦 "
-modified = "📝 ×${count} "
-staged = "🗃️  × ${count} "
+modified = "📝  × ${count} "
+staged = "🗃️ × ${count} "
 renamed = "📛 × ${count} "
 deleted = "🗑️  × ${count} "
 style = "bright-white"
@@ -60,7 +61,7 @@ style = "bold green"
 
 [memory_usage]
 format = " $symbol [${ram}( | ${swap})]($style) "
-threshold = 40
+threshold = 50
 style = "bold dimmed white"
 disabled = false
 

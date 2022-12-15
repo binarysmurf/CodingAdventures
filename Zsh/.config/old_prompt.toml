@@ -1,0 +1,22 @@
+add_newline = false
+command_timeout = 1000
+
+[character]
+success_symbol = "[√>](#97971a)"
+# error_symbol = "[√>](#cc241d)"
+error_symbol = "[✖>](#cc241d)"
+
+[status]
+disabled = false
+format = '[\[$status - $common_meaning\]](yellow) '
+
+[time]
+disabled = false
+style = "bold #fabd2f"
+
+[directory]
+truncation_length = 10
+truncate_to_repo = false
+style = "bold #b16286"
+
+format = "[$time:$path]($style) [$read_only]($read_only_style)"

@@ -3,6 +3,7 @@
 require("custom_nvim.modules-setup")
 require("custom_nvim.core.options")
 require("custom_nvim.core.keymaps")
+require("custom_nvim.vs_code")
 require("custom_nvim.core.colorscheme")
 
 -- load custom modules/plugins

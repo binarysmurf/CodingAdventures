@@ -7,7 +7,6 @@ opt.relativenumber = true
 opt.syntax = "on"
 opt.tabstop = 4
 opt.softtabstop = 4
-opt.textwidth = 79
 opt.shiftwidth = 4
 opt.expandtab = true
 opt.hlsearch = true
