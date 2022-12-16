@@ -99,7 +99,7 @@ alias gl='glances -2'
 
 # Python 3.x
 
-alias python='python3'
+alias python='noglob python3'
 alias pv='python3 --version'
 alias pip='pip3'
 alias pa='pip-autoremove'
@@ -131,8 +131,6 @@ alias brcl='brew cleanup --prune=all;brew autoremove'
 alias medic='brew doctor'
 
 # Misc.
-
-alias wcd='world-cup-2022-cli-dashboard'
 
 alias imgdim='sips -g pixelHeight -g pixelWidth'
 alias pcolors='for i in {0..255}; do print -Pn "%K{$i}  %k%F{$i}${(l:3::0:)i}%f " ${${(M)$((i%6)):#3}:+$'\n'}; done'

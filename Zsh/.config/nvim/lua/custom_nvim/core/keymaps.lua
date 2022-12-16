@@ -25,3 +25,5 @@ key.set("n", "<leader>fs", "<cmd>Telescope live_grep<cr>") -- find string in cur
 key.set("n", "<leader>fc", "<cmd>Telescope grep_string<cr>") -- find string under cursor in current working directory
 key.set("n", "<leader>fr", "<cmd>Telescope oldfiles<cr>") -- list open buffers in current neovim instance
 key.set("n", "<leader>fh", "<cmd>Telescope help_tags<cr>") -- list available help tags
+-- in lua
+key.set("n", "<leader>Y", ":Yapf<CR>")

@@ -37,6 +37,10 @@ au TextYankPost * silent! lua vim.highlight.on_yank({timeout=2000})
 augroup END
 ]])
 
+-- automatically format Python on save
+--
+vim.cmd([[autocmd BufWritePre *.py :Yapf]])
+
 -- Setting some globals to satisfy :checkhealth
 
 vim.g.spelllang = "en"
