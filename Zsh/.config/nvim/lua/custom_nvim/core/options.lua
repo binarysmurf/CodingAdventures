@@ -10,6 +10,7 @@ opt.softtabstop = 4
 opt.shiftwidth = 4
 opt.expandtab = true
 opt.hlsearch = true
+opt.incsearch = true
 opt.showmatch = true
 opt.clipboard:append("unnamedplus")
 opt.iskeyword:append("-")
@@ -19,6 +20,7 @@ opt.ignorecase = true
 opt.smartcase = true
 opt.cursorline = true
 opt.cursorcolumn = true
+opt.colorcolumn = "120"
 opt.splitright = true
 opt.splitbelow = true
 opt.background = "dark"
@@ -27,7 +29,7 @@ opt.backspace = "indent,eol,start"
 opt.foldmethod = "expr"
 opt.foldexpr = "nvim_treesitter#foldexpr()"
 opt.foldlevel = 5
-opt.guifont = { "UbuntuMono Nerd Font", ":24" }
+opt.updatetime = 50
 
 -- turns on highlight_yank, thereby avoiding a plugin installation
 vim.cmd([[
@@ -54,5 +56,4 @@ vim.diagnostic.config({
 	virtual_text = false,
 })
 
-vim.g.neovide_transparency = 0.8
 vim.opt.termguicolors = true

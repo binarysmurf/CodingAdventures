@@ -26,4 +26,5 @@ key.set("n", "<leader>fc", "<cmd>Telescope grep_string<cr>") -- find string unde
 key.set("n", "<leader>fr", "<cmd>Telescope oldfiles<cr>") -- list open buffers in current neovim instance
 key.set("n", "<leader>fh", "<cmd>Telescope help_tags<cr>") -- list available help tags
 -- in lua
-key.set("n", "<leader>Y", ":Yapf<CR>")
+key.set("n", "<leader>Y", ":Yapf<cr>")
+key.set("n", "J", "mzJ'z")
