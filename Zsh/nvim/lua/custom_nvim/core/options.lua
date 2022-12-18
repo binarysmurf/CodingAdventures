@@ -1,42 +1,31 @@
-local opt = vim.opt
-
-opt.mouse = "a"
-opt.wrap = false
-opt.number = true
-opt.relativenumber = true
-opt.syntax = "on"
-opt.tabstop = 4
-opt.softtabstop = 4
-opt.textwidth = 79
-opt.shiftwidth = 4
-opt.expandtab = true
-opt.hlsearch = true
-opt.showmatch = true
-opt.clipboard:append("unnamedplus")
-opt.iskeyword:append("-")
-opt.autoindent = true
-opt.scrolloff = 5
-opt.ignorecase = true
-opt.smartcase = true
-opt.cursorline = true
-opt.cursorcolumn = true
-opt.splitright = true
-opt.splitbelow = true
-opt.background = "dark"
-opt.signcolumn = "yes"
-opt.backspace = "indent,eol,start"
-opt.foldmethod = "expr"
-opt.foldexpr = "nvim_treesitter#foldexpr()"
-opt.foldlevel = 5
-opt.guifont = { "UbuntuMono Nerd Font", ":24" }
-
--- turns on highlight_yank, thereby avoiding a plugin installation
-vim.cmd([[
-augroup highlight_yank
-autocmd!
-au TextYankPost * silent! lua vim.highlight.on_yank({timeout=2000})
-augroup END
-]])
+vim.opt.mouse = "a"
+vim.opt.wrap = false
+vim.opt.number = true
+vim.opt.relativenumber = true
+vim.opt.syntax = "on"
+vim.opt.tabstop = 4
+vim.opt.softtabstop = 4
+vim.opt.textwidth = 79
+vim.opt.shiftwidth = 4
+vim.opt.expandtab = true
+vim.opt.hlsearch = true
+vim.opt.showmatch = true
+vim.opt.clipboard:append("unnamedplus")
+vim.opt.iskeyword:append("-")
+vim.opt.autoindent = true
+vim.opt.scrolloff = 5
+vim.opt.ignorecase = true
+vim.opt.smartcase = true
+vim.opt.cursorline = true
+vim.opt.cursorcolumn = true
+vim.opt.splitright = true
+vim.opt.splitbelow = true
+vim.opt.background = "dark"
+vim.opt.signcolumn = "yes"
+vim.opt.backspace = "indent,eol,start"
+vim.opt.foldmethod = "expr"
+vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
+vim.opt.foldlevel = 5
 
 -- Setting some globals to satisfy :checkhealth
 
@@ -50,6 +39,3 @@ vim.g.plist_display_format = "xml"
 vim.diagnostic.config({
 	virtual_text = false,
 })
-
-vim.g.neovide_transparency = 0.8
-vim.opt.termguicolors = true
