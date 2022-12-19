@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/zsh
 
 # My aliases: Feb - Aug 2022. By Steve. So fuck off. 😀
 
@@ -61,9 +61,9 @@ alias saa='defaults write com.apple.dock static-only -bool false; killall Dock'
 alias spm='defaults write com.apple.dock single-app -bool true; killall Dock'
 alias mpm='defaults write com.apple.dock single-app -bool false; killall Dock'
 alias spd="defaults write com.apple.dock persistent-apps -array-add '{"tile-type"="spacer-tile";}'; killall Dock"
-
 alias root_off='sudo defaults write /Library/Preferences/com.apple.loginwindow SHOWOTHERUSERS_MANAGED -bool FALSE'
 alias root_on='sudo defaults write /Library/Preferences/com.apple.loginwindow SHOWOTHERUSERS_MANAGED -bool TRUE'
+
 alias oa='open -a'
 alias op='open -a Preview'
 alias ts='tmux new -s'
@@ -71,12 +71,9 @@ alias ta='tmux attach'
 
 # Editor related.
 
-alias mc='micro'
 alias nv='nvim'
 
 alias ed='${EDITOR}'
-alias sm="export EDITOR='micro'"
-alias sn="export EDITOR='nvim'"
 
 alias mhdd='sudo mkdir /Volumes/EFI_HDD; sudo mount -t msdos /dev/disk1s1 /Volumes/EFI_HDD'
 alias mssd='sudo mkdir /Volumes/EFI_SSD; sudo mount -t msdos /dev/disk0s1 /Volumes/EFI_SSD'
@@ -107,12 +104,12 @@ alias pa='pip-autoremove'
 # Edit/reload .dotfiles.
 	
 alias ez='${EDITOR} ${ZDOTDIR:-$HOME}/.zshrc' # Edit zsh config
+alias ep='${EDITOR} ${ZDOTDIR:-$HOME}/.zprofile' # Edit .zprofile
 alias ea='${EDITOR} ${ZDOTDIR:-$HOME}/.my_aliases.sh' # Edit personalised aliases
 alias ec='nvim -S nvim_configs.vim'
 alias ef='${EDITOR} ${ZDOTDIR:-$HOME}/.my_functions.sh' # Edit personalised functions
 alias ei='${EDITOR} ${ZDOTDIR:-$HOME}/.config/nvim/init.lua' # Neovim init file.
 alias sz='source ~/.zshrc; clear' # Reload zsh config, which references all of the above .dotfiles
-alias nvi='neovide'
 
 # Find Wifi and hardwired IP.
 

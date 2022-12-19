@@ -89,10 +89,21 @@ return packer.startup(function(use)
 			ts_update()
 		end,
 	})
+    use('nvim-treesitter/nvim-treesitter-refactor')
 
+  use { -- Additional text objects via treesitter
+    'nvim-treesitter/nvim-treesitter-textobjects',
+    after = 'nvim-treesitter',
+  }
 	-- auto closing
 	use("windwp/nvim-autopairs") -- autoclose parens, brackets, quotes, etc...
 	use({ "windwp/nvim-ts-autotag", after = "nvim-treesitter" }) -- autoclose tags
+    use('lukas-reineke/indent-blankline.nvim') -- Add indentation guides even on blank lines
+
+    require('indent_blankline').setup {
+        char = '┊',
+        show_trailing_blankline_indent = true,
+    }
 
 	-- git integration
 	use("frazrepo/vim-rainbow")
@@ -116,22 +127,35 @@ return packer.startup(function(use)
 				},
 				-- Whether the contents of a currently open hover window should be moved
 				-- to a :h preview-window when pressing the hover keymap.
-				preview_window = false,
+				preview_window = true,
 				title = true,
 			})
 
 			-- Setup keymaps
-			vim.keymap.set("n", "K", require("hover").hover, { desc = "hover.nvim" })
-			vim.keymap.set("n", "gK", require("hover").hover_select, { desc = "hover.nvim (select)" })
-		end,
+		vim.keymap.set("n", "K", require("hover").hover, { desc = "hover.nvim" })
+		vim.keymap.set("n", "gK", require("hover").hover_select, { desc = "hover.nvim (select)" })
+		 end,
 	})
 	use("darfink/vim-plist")
 	use("lewis6991/impatient.nvim")
-	use("voldikss/vim-floaterm")
 	use("bennyyip/vim-yapf")
 	use("bluz71/vim-moonfly-colors")
 
-	if packer_bootstrap then
+  -- local nmap = function(keys, func, desc)
+  --   if desc then
+  --     desc = 'LSP: ' .. desc
+  --   end
+  --   vim.keymap.set('n', keys, func, { buffer = bufnr, desc = desc })
+  -- end
+  --
+  -- nmap('<leader>qn', vim.lsp.buf.rename, '[R]e[n]ame')
+  --
+  local has_plugins, plugins = pcall(require, 'custom.plugins')
+  if has_plugins then
+    plugins(use)
+  end
+
+  if packer_bootstrap then
 		require("packer").sync()
 	end
 end)

@@ -26,22 +26,12 @@ opt.splitbelow = true
 opt.background = "dark"
 opt.signcolumn = "yes"
 opt.backspace = "indent,eol,start"
-opt.foldmethod = "expr"
+opt.foldmethod = "indent"
 opt.foldexpr = "nvim_treesitter#foldexpr()"
-opt.foldlevel = 5
-opt.updatetime = 50
-
--- turns on highlight_yank, thereby avoiding a plugin installation
-vim.cmd([[
-augroup highlight_yank
-autocmd!
-au TextYankPost * silent! lua vim.highlight.on_yank({timeout=2000})
-augroup END
-]])
-
--- automatically format Python on save
---
-vim.cmd([[autocmd BufWritePre *.py :Yapf]])
+opt.foldlevel = 99
+opt.updatetime = 250
+opt.termguicolors = true
+opt.breakindent = true
 
 -- Setting some globals to satisfy :checkhealth
 
@@ -55,5 +45,14 @@ vim.g.plist_display_format = "xml"
 vim.diagnostic.config({
 	virtual_text = false,
 })
+-- turns on highlight_yank, thereby avoiding a plugin installation
+vim.cmd([[
+augroup highlight_yank
+autocmd!
+au TextYankPost * silent! lua vim.highlight.on_yank({timeout=2000})
+augroup END
+]])
 
-vim.opt.termguicolors = true
+-- automatically format Python on save
+--
+vim.cmd([[autocmd BufWritePre *.py :Yapf]])

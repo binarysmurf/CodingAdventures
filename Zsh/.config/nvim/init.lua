@@ -22,3 +22,4 @@ require("custom_nvim.modules.lsp.null-ls")
 require("custom_nvim.modules.autopairs")
 require("custom_nvim.modules.treesitter")
 require("custom_nvim.modules.gitsigns")
+

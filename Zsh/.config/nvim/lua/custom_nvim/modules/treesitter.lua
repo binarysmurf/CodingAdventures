@@ -17,21 +17,29 @@ treesitter.setup({
   -- ensure these language parsers are installed
   ensure_installed = {
     "json",
-    "javascript",
-    "typescript",
-    "tsx",
     "yaml",
     "html",
     "css",
-    "markdown",
-    "svelte",
-    "graphql",
     "bash",
     "lua",
     "vim",
-    "dockerfile",
-    "gitignore",
+    "C",
+    "Python",
   },
   -- auto install above language parsers
   auto_install = true,
 })
+require('nvim-treesitter.configs').setup {
+  refactor = {
+    -- highlight_current_scope = { enable = true },
+    highlight_definitions  = { enable = true },
+    clear_on_cursor_move = true,
+    smart_rename = {
+      enable = true,
+      keymaps = {
+        smart_rename = "grn",
+      },
+    },
+  },
+}
+
