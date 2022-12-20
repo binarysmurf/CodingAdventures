@@ -1,4 +1,10 @@
-local status, _ = pcall(vim.cmd, "colorscheme onedark")
+-- require("tokyonight").setup({
+--      comments = { italic = true },
+--      keywords = { italic = true },
+--      lualine_bold = true,
+--  })
+--
+local status, _ = pcall(vim.cmd, "colorscheme onedark") 
 if not status then
 	print("Colorscheme not installed, ballbag!")
 	return

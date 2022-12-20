@@ -11,4 +11,7 @@ lualine.setup({
 		icons_enabled = true,
 		theme = "onedark",
 	},
+    sections = {
+    lualine_c = { {'filename', path = 2 } },
+    },
 })

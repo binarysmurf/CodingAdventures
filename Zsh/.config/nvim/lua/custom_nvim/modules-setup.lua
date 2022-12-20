@@ -33,8 +33,12 @@ return packer.startup(function(use)
 	use("wbthomason/packer.nvim")
 	use("nvim-lua/plenary.nvim") -- lua functions that many plugins use
 
+    -- Various colors/theme related.
 	use("ellisonleao/gruvbox.nvim")
-	use("Mofiqul/vscode.nvim")
+    use("folke/tokyonight.nvim")
+	use("joshdick/onedark.vim")
+	use("bluz71/vim-moonfly-colors")
+    use("Mofiqul/vscode.nvim")
 	use("norcalli/nvim-colorizer.lua")
 
 	-- essential plugins
@@ -108,7 +112,6 @@ return packer.startup(function(use)
 	-- git integration
 	use("frazrepo/vim-rainbow")
 	use("sbdchd/neoformat")
-	use("joshdick/onedark.vim")
 	use("lewis6991/gitsigns.nvim") -- show line modifications on left hand side
 	use({
 		"lewis6991/hover.nvim",
@@ -139,17 +142,7 @@ return packer.startup(function(use)
 	use("darfink/vim-plist")
 	use("lewis6991/impatient.nvim")
 	use("bennyyip/vim-yapf")
-	use("bluz71/vim-moonfly-colors")
 
-  -- local nmap = function(keys, func, desc)
-  --   if desc then
-  --     desc = 'LSP: ' .. desc
-  --   end
-  --   vim.keymap.set('n', keys, func, { buffer = bufnr, desc = desc })
-  -- end
-  --
-  -- nmap('<leader>qn', vim.lsp.buf.rename, '[R]e[n]ame')
-  --
   local has_plugins, plugins = pcall(require, 'custom.plugins')
   if has_plugins then
     plugins(use)

@@ -3,8 +3,8 @@
 require("custom_nvim.modules-setup")
 require("custom_nvim.core.options")
 require("custom_nvim.core.keymaps")
-require("custom_nvim.vs_code")
 require("custom_nvim.core.colorscheme")
+-- require("custom_nvim.vs_code")
 
 -- load custom modules/plugins
 
@@ -22,4 +22,3 @@ require("custom_nvim.modules.lsp.null-ls")
 require("custom_nvim.modules.autopairs")
 require("custom_nvim.modules.treesitter")
 require("custom_nvim.modules.gitsigns")
-

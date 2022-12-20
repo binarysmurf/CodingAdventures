@@ -3,12 +3,13 @@ vim.g.mapleader = " "
 local key = vim.keymap
 
 key.set("n", "<C-s>", ":w<CR>")
+key.set("n", "<C-w>", ":so %<CR>", { silent = true })
 key.set("n", "<C-q>", ":q<CR>")
 key.set("n", "<C-z>", ":qall!<CR>")
 key.set("n", "<C-x>", ":q!<CR>")
 key.set("n", "<leader>X", ":qa!<CR>")
 key.set("n", "<leader>sx", ":close<CR>")
-key.set("n", "<leader>/", ":nohl<CR>")
+key.set("n", "<leader>nh", ":nohl<CR>", { silent = true })
 
 key.set("n", "<leader>sh", ":split<CR>")
 key.set("n", "<leader>sv", ":vsplit<CR>")
@@ -29,9 +30,3 @@ key.set("n", "<leader>fh", "<cmd>Telescope help_tags<cr>") -- list available hel
 -- in lua
 key.set('n', '<leader>d', vim.diagnostic.open_float)
 key.set('n', '<leader>q', vim.diagnostic.setloclist)
-
--- key.set('n', "<leader><Up>", ":wincmd k<CR>")
--- key.set('n', "<leader><Down>", ":wincmd j<CR>")
--- key.set('n', "<leader><Left>", ":wincmd h<CR>")
--- key.set('n', "<leader><Right>", ":wincmd l<CR>")
-
