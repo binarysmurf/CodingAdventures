@@ -40,18 +40,13 @@ return packer.startup(function(use)
 	use("bluz71/vim-moonfly-colors")
     use("Mofiqul/vscode.nvim")
 	use("norcalli/nvim-colorizer.lua")
-
-	-- essential plugins
-	use("tpope/vim-surround") -- add, delete, change surroundings (it's awesome)
-	use("inkarkat/vim-ReplaceWithRegister") -- replace with register contents using motion (gr + motion)
+	use("frazrepo/vim-rainbow")
 
 	-- commenting with gc
 	use("numToStr/Comment.nvim")
 
-	-- file explorer
+	-- file explorer with vs-code like icons.
 	use("nvim-tree/nvim-tree.lua")
-
-	-- vs-code like icons
 	use("nvim-tree/nvim-web-devicons")
 
 	-- statusline
@@ -61,27 +56,19 @@ return packer.startup(function(use)
 	use({ "nvim-telescope/telescope-fzf-native.nvim", run = "make" }) -- dependency for better sorting performance
 	use({ "nvim-telescope/telescope.nvim", branch = "0.1.x" }) -- fuzzy finder
 
-	-- autocompletion
+	-- autocompletion, snippets, linting  and lsp.
 	use("hrsh7th/nvim-cmp") -- completion plugin
 	use("hrsh7th/cmp-buffer") -- source for text in buffer
 	use("hrsh7th/cmp-path") -- source for file system paths
-
-	-- snippets
 	use("L3MON4D3/LuaSnip") -- snippet engine
 	use("saadparwaiz1/cmp_luasnip") -- for autocompletion
 	use("rafamadriz/friendly-snippets") -- useful snippets
-
-	-- managing & installing lsp servers, linters & formatters
 	use("williamboman/mason.nvim") -- in charge of managing lsp servers, linters & formatters
 	use("williamboman/mason-lspconfig.nvim") -- bridges gap b/w mason & lspconfig
-
-	-- configuring lsp servers
 	use("neovim/nvim-lspconfig") -- easily configure language servers
 	use("hrsh7th/cmp-nvim-lsp") -- for autocompletion
 	use({ "glepnir/lspsaga.nvim", branch = "main" }) -- enhanced lsp uis
 	use("onsails/lspkind.nvim") -- vs-code like icons for autocompletion
-
-	-- formatting & linting
 	use("jose-elias-alvarez/null-ls.nvim") -- configure formatters & linters
 	use("jayp0521/mason-null-ls.nvim") -- bridges gap b/w mason & null-ls
 
@@ -94,11 +81,10 @@ return packer.startup(function(use)
 		end,
 	})
     use('nvim-treesitter/nvim-treesitter-refactor')
-
-  use { -- Additional text objects via treesitter
-    'nvim-treesitter/nvim-treesitter-textobjects',
-    after = 'nvim-treesitter',
-  }
+    use { -- Additional text objects via treesitter
+        'nvim-treesitter/nvim-treesitter-textobjects',
+        after = 'nvim-treesitter',
+    }
 	-- auto closing
 	use("windwp/nvim-autopairs") -- autoclose parens, brackets, quotes, etc...
 	use({ "windwp/nvim-ts-autotag", after = "nvim-treesitter" }) -- autoclose tags
@@ -110,39 +96,13 @@ return packer.startup(function(use)
     }
 
 	-- git integration
-	use("frazrepo/vim-rainbow")
 	use("sbdchd/neoformat")
 	use("lewis6991/gitsigns.nvim") -- show line modifications on left hand side
-	use({
-		"lewis6991/hover.nvim",
-		config = function()
-			require("hover").setup({
-				init = function()
-					-- Require providers
-					require("hover.providers.lsp")
-					require("hover.providers.gh")
-					-- require('hover.providers.jira')
-					-- require('hover.providers.man')
-					-- require('hover.providers.dictionary')
-				end,
-				preview_opts = {
-					border = nil,
-				},
-				-- Whether the contents of a currently open hover window should be moved
-				-- to a :h preview-window when pressing the hover keymap.
-				preview_window = true,
-				title = true,
-			})
 
-			-- Setup keymaps
-		vim.keymap.set("n", "K", require("hover").hover, { desc = "hover.nvim" })
-		vim.keymap.set("n", "gK", require("hover").hover_select, { desc = "hover.nvim (select)" })
-		 end,
-	})
-	use("darfink/vim-plist")
-	use("lewis6991/impatient.nvim")
-	use("bennyyip/vim-yapf")
-
+	use("darfink/vim-plist") -- PLIST functionality.
+	use("lewis6991/impatient.nvim") -- Plugin optimiser
+	use("bennyyip/vim-yapf") -- Python auto-formatter on save.
+ 
   local has_plugins, plugins = pcall(require, 'custom.plugins')
   if has_plugins then
     plugins(use)

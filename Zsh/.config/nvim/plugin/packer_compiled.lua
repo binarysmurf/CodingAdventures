@@ -119,12 +119,6 @@ _G.packer_plugins = {
     path = "/Users/stevie/.local/share/nvim/site/pack/packer/start/gruvbox.nvim",
     url = "https://github.com/ellisonleao/gruvbox.nvim"
   },
-  ["hover.nvim"] = {
-    config = { "\27LJ\2\nR\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0016\0\0\0'\2\2\0B\0\2\1K\0\1\0\23hover.providers.gh\24hover.providers.lsp\frequire¡\2\1\0\a\0\17\0!6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0003\3\3\0=\3\5\0025\3\6\0=\3\a\2B\0\2\0016\0\b\0009\0\t\0009\0\n\0'\2\v\0'\3\f\0006\4\0\0'\6\1\0B\4\2\0029\4\1\0045\5\r\0B\0\5\0016\0\b\0009\0\t\0009\0\n\0'\2\v\0'\3\14\0006\4\0\0'\6\1\0B\4\2\0029\4\15\0045\5\16\0B\0\5\1K\0\1\0\1\0\1\tdesc\24hover.nvim (select)\17hover_select\agK\1\0\1\tdesc\15hover.nvim\6K\6n\bset\vkeymap\bvim\17preview_opts\1\0\0\tinit\1\0\2\19preview_window\2\ntitle\2\0\nsetup\nhover\frequire\0" },
-    loaded = true,
-    path = "/Users/stevie/.local/share/nvim/site/pack/packer/start/hover.nvim",
-    url = "https://github.com/lewis6991/hover.nvim"
-  },
   ["impatient.nvim"] = {
     loaded = true,
     path = "/Users/stevie/.local/share/nvim/site/pack/packer/start/impatient.nvim",
@@ -259,11 +253,6 @@ _G.packer_plugins = {
     path = "/Users/stevie/.local/share/nvim/site/pack/packer/start/tokyonight.nvim",
     url = "https://github.com/folke/tokyonight.nvim"
   },
-  ["vim-ReplaceWithRegister"] = {
-    loaded = true,
-    path = "/Users/stevie/.local/share/nvim/site/pack/packer/start/vim-ReplaceWithRegister",
-    url = "https://github.com/inkarkat/vim-ReplaceWithRegister"
-  },
   ["vim-moonfly-colors"] = {
     loaded = true,
     path = "/Users/stevie/.local/share/nvim/site/pack/packer/start/vim-moonfly-colors",
@@ -279,11 +268,6 @@ _G.packer_plugins = {
     path = "/Users/stevie/.local/share/nvim/site/pack/packer/start/vim-rainbow",
     url = "https://github.com/frazrepo/vim-rainbow"
   },
-  ["vim-surround"] = {
-    loaded = true,
-    path = "/Users/stevie/.local/share/nvim/site/pack/packer/start/vim-surround",
-    url = "https://github.com/tpope/vim-surround"
-  },
   ["vim-yapf"] = {
     loaded = true,
     path = "/Users/stevie/.local/share/nvim/site/pack/packer/start/vim-yapf",
@@ -297,15 +281,11 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: hover.nvim
-time([[Config for hover.nvim]], true)
-try_loadstring("\27LJ\2\nR\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0016\0\0\0'\2\2\0B\0\2\1K\0\1\0\23hover.providers.gh\24hover.providers.lsp\frequire¡\2\1\0\a\0\17\0!6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0003\3\3\0=\3\5\0025\3\6\0=\3\a\2B\0\2\0016\0\b\0009\0\t\0009\0\n\0'\2\v\0'\3\f\0006\4\0\0'\6\1\0B\4\2\0029\4\1\0045\5\r\0B\0\5\0016\0\b\0009\0\t\0009\0\n\0'\2\v\0'\3\14\0006\4\0\0'\6\1\0B\4\2\0029\4\15\0045\5\16\0B\0\5\1K\0\1\0\1\0\1\tdesc\24hover.nvim (select)\17hover_select\agK\1\0\1\tdesc\15hover.nvim\6K\6n\bset\vkeymap\bvim\17preview_opts\1\0\0\tinit\1\0\2\19preview_window\2\ntitle\2\0\nsetup\nhover\frequire\0", "config", "hover.nvim")
-time([[Config for hover.nvim]], false)
 -- Load plugins in order defined by `after`
 time([[Sequenced loading]], true)
 vim.cmd [[ packadd nvim-treesitter ]]
-vim.cmd [[ packadd nvim-treesitter-textobjects ]]
 vim.cmd [[ packadd nvim-ts-autotag ]]
+vim.cmd [[ packadd nvim-treesitter-textobjects ]]
 time([[Sequenced loading]], false)
 
 _G._packer.inside_compile = false
