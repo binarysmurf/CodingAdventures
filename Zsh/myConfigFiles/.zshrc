@@ -28,7 +28,6 @@ export HOMEBREW_NO_ENV_HINTS=true
 export HOMEBREW_NO_ANALYTICS=1
 export MANPAGER="zsh -c 'col -bx | bat -l man -p'"
 export MANPATH="/usr/local/man:$MANPATH"
-export MICRO_TRUECOLOR=1
 export EDITOR="nvim"
 export LESSHISTFILE=-
 export LESS="-SXIFRs"

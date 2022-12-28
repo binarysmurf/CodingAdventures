@@ -10,6 +10,7 @@ key.set("n", "<C-x>", ":q!<CR>")
 key.set("n", "<leader>X", ":qa!<CR>")
 key.set("n", "<leader>sx", ":close<CR>")
 key.set("n", "<F8>", ":nohl<CR>", { silent = true })
+key.set('n', ",", "$p")
 
 key.set("n", "<leader>sh", ":split<CR>")
 key.set("n", "<leader>sv", ":vsplit<CR>")
