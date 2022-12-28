@@ -31,7 +31,7 @@ WeeklyUpdate()
 #
 
 
-	# Get the short form of the current weekday
+    # Get the short form of the current weekday (Sun, Mon, Tue etc..)
 	wday=$(date "+%a")  
 
 	
@@ -43,7 +43,7 @@ WeeklyUpdate()
 		    brew update; brew upgrade; brew cleanup --prune=all; brew doctor
 		    tmutil deletelocalsnapshots /Volumes/Internal\ HD
 		    touch ~/.updatedone # .. and create a file to stop a repeat update.
-            echo "Housework complete!!"
+            echo "Update complete!!"
 		fi
 	fi
 	

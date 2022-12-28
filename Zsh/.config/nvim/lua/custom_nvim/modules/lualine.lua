@@ -9,7 +9,7 @@ end
 lualine.setup({
 	options = {
 		icons_enabled = true,
-		theme = "onedark",
+		theme = "kanagawa",
 	},
     sections = {
     lualine_c = { {'filename', path = 2 } },

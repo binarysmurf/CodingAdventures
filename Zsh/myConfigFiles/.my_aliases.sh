@@ -1,6 +1,6 @@
 #!/bin/zsh
 
-# My aliases: Feb - Aug 2022. By Steve. So fuck off. 😀
+# My aliases: Feb - Oct 2022. By Steve. So fuck off. 😀
 
 # Directory navigation and related aliases.
 
