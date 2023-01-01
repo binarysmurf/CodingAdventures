@@ -34,7 +34,7 @@ fi
 
 for i in *.$1; do 
     echo $i
-	ffmpeg -loglevel quiet -i "$i" -threads 4 -c:a aac -vn -b:a 320k "${i%.*}.m4a";
+	ffmpeg -loglevel quiet -i "$i" -c:a aac -vn -b:a 320k "${i%.*}.m4a";
 done 
 echo "Completed conversion process."
 
