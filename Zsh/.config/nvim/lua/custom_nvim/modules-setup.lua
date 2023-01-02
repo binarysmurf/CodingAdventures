@@ -43,6 +43,7 @@ return packer.startup(function(use)
 	use("norcalli/nvim-colorizer.lua")
 	use("frazrepo/vim-rainbow")
     use("rebelot/kanagawa.nvim")
+    use('sainnhe/everforest')
 	-- commenting with gc
 	use("numToStr/Comment.nvim")
 

@@ -114,6 +114,11 @@ _G.packer_plugins = {
     path = "/Users/stevie/.local/share/nvim/site/pack/packer/start/dracula.nvim",
     url = "https://github.com/Mofiqul/dracula.nvim"
   },
+  everforest = {
+    loaded = true,
+    path = "/Users/stevie/.local/share/nvim/site/pack/packer/start/everforest",
+    url = "https://github.com/sainnhe/everforest"
+  },
   ["friendly-snippets"] = {
     loaded = true,
     path = "/Users/stevie/.local/share/nvim/site/pack/packer/start/friendly-snippets",
@@ -299,8 +304,8 @@ time([[Defining packer_plugins]], false)
 -- Load plugins in order defined by `after`
 time([[Sequenced loading]], true)
 vim.cmd [[ packadd nvim-treesitter ]]
-vim.cmd [[ packadd nvim-ts-autotag ]]
 vim.cmd [[ packadd nvim-treesitter-textobjects ]]
+vim.cmd [[ packadd nvim-ts-autotag ]]
 time([[Sequenced loading]], false)
 
 _G._packer.inside_compile = false
