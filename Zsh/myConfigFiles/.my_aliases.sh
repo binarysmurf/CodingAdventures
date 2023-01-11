@@ -72,6 +72,7 @@ alias ta='tmux attach'
 # Editor related.
 
 alias nv='nvim'
+alias np='nvim +PackerSync'
 
 alias ed='${EDITOR}'
 
@@ -134,3 +135,5 @@ alias pcolors='for i in {0..255}; do print -Pn "%K{$i}  %k%F{$i}${(l:3::0:)i}%f 
 alias ot='other-transcode'
 alias og='open -a gifski'
 alias yg='youtube-dl'
+alias ff='fastfetch'
+alias neofetch='fastfetch'

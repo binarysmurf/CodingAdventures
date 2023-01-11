@@ -37,7 +37,7 @@ export CPPFLAGS="-I/usr/local/opt/ruby/include"
 
 export PATH="/usr/local/opt/ruby/bin:$PATH"
 export PATH="/usr/local/sbin:$PATH"
-export PATH="/usr/local/lib/ruby/gems/3.1.0/bin:$PATH"
+export PATH="/usr/local/lib/ruby/gems/3.2.0/bin:$PATH"
 
 # Created by `pipx` on 2022-10-24 02:37:09
 export PATH="$PATH:/Users/stevie/.bin"
@@ -67,4 +67,4 @@ WeeklyUpdate
 [ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
 # eval "$(register-python-argcomplete pipx)"
 eval "$(starship init zsh)"
-# zprof
+# fastfetch --load-config /Users/stevie/Geekery/Github/fastfetch/presets/btw
