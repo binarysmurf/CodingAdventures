@@ -9,7 +9,7 @@ end
 lualine.setup({
 	options = {
 		icons_enabled = true,
-		theme = "gruvbox",
+		theme = "onedark_vivid",
 	},
     sections = {
     lualine_c = { {'filename', path = 2 } },

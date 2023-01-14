@@ -39,11 +39,13 @@ return packer.startup(function(use)
 	use("joshdick/onedark.vim")
     use('Mofiqul/dracula.nvim')
     use("bluz71/vim-moonfly-colors")
+    use("rebelot/kanagawa.nvim")
+    use('sainnhe/everforest')
+    use("olimorris/onedarkpro.nvim")
+
     use("Mofiqul/vscode.nvim")
 	use("norcalli/nvim-colorizer.lua")
 	use("frazrepo/vim-rainbow")
-    use("rebelot/kanagawa.nvim")
-    use('sainnhe/everforest')
 	-- commenting with gc
 	use("numToStr/Comment.nvim")
 

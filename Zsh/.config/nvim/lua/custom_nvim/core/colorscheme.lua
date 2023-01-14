@@ -42,7 +42,7 @@
 --   },
 -- })
 --
-local status, _ = pcall(vim.cmd, "colorscheme gruvbox") 
+local status, _ = pcall(vim.cmd, "colorscheme onedark_vivid") 
 if not status then
 	print("Colorscheme not installed, ballbag!")
 	return
