@@ -40,7 +40,7 @@ vim.g.spell = 1
 vim.g.loaded_ruby_provider = 0
 vim.g.loaded_node_provider = 0
 vim.g.loaded_perl_provider = 0
-vim.g.python3_host_prog = "/Library/Frameworks/Python.framework/Versions/3.10/bin/python3"
+vim.g.python3_host_prog = "/Library/Frameworks/Python.framework/Versions/3.11/bin/python3"
 vim.g.plist_display_format = "xml"
 vim.diagnostic.config({
 	virtual_text = false,
