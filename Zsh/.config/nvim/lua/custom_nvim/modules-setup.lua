@@ -39,9 +39,12 @@ return packer.startup(function(use)
 	use("joshdick/onedark.vim")
     use('Mofiqul/dracula.nvim')
     use("bluz71/vim-moonfly-colors")
-    use("rebelot/kanagawa.nvim")
     use('sainnhe/everforest')
-    use("olimorris/onedarkpro.nvim")
+    use {
+    'uloco/bluloco.nvim',
+    requires = { 'rktjmp/lush.nvim' }
+    }   
+    use("shaunsingh/nord.nvim")
 
     use("Mofiqul/vscode.nvim")
 	use("norcalli/nvim-colorizer.lua")
@@ -76,6 +79,7 @@ return packer.startup(function(use)
 	use("onsails/lspkind.nvim") -- vs-code like icons for autocompletion
 	use("jose-elias-alvarez/null-ls.nvim") -- configure formatters & linters
 	use("jayp0521/mason-null-ls.nvim") -- bridges gap b/w mason & null-ls
+    use("XadillaX/json-formatter.vim")
 
 	-- treesitter configuration
 	use({

@@ -34,10 +34,10 @@ export LESS="-SXIFRs"
 
 export LDFLAGS="-L/usr/local/opt/ruby/lib"
 export CPPFLAGS="-I/usr/local/opt/ruby/include"
-
 export PATH="/usr/local/opt/ruby/bin:$PATH"
 export PATH="/usr/local/sbin:$PATH"
 export PATH="/usr/local/lib/ruby/gems/3.2.0/bin:$PATH"
+export PATH="$PATH:/Library/Frameworks/Python.framework/Versions/3.11/bin"
 
 # Created by `pipx` on 2022-10-24 02:37:09
 export PATH="$PATH:/Users/stevie/.bin"
@@ -45,7 +45,6 @@ export PATH="$PATH:/Users/stevie/.local/bin"
 
 # Don't ask me what this does. It cleans up your $PATH enviroment variable via some black magic fuckery.
 
-export PATH="$PATH:/Library/Frameworks/Python.framework/Versions/3.11/bin"
 export PATH="$(perl -e 'print join(":", grep { not $seen{$_}++ } split(/:/, $ENV{PATH}))')"
 
 # Must have zsh plugins

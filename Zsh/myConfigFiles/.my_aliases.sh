@@ -8,14 +8,15 @@ alias ols='/bin/ls'
 alias ola='/bin/ls -la'
 alias oll='/bin/ls -l'
 
-alias ls='lsd'
-alias ll='lsd -l'
-alias kk='lsd -l'
-alias la='lsd -lA'
+# alias ls='lsd'
+# alias ll='lsd -l'
+# alias la='lsd -lA'
+alias ls='exa'
+alias ll='exa -l --icons --colour-scale --header'
+alias la='exa -la --icons --colour-scale --header'
 alias lt='lsd -l --total-size --sizesort'
 alias lta='lsd -lA --total-size --sizesort'
 alias ltt='lsd -l --total-size --sizesort | head -n 10'
-alias rmdir='sudo rm -rf'
 
 # General QoL
 
@@ -29,8 +30,9 @@ alias px='cd ~/Pictures;clear'
 alias gd='cd ~/Geekery/Github;clear'
 alias pd='cd ~/Geekery/Coding/Python;clear'
 alias ld='cd ~/Geekery/Linux;clear'
-alias rm=trash
 alias gc='git clone'
+alias rm=trash
+alias rmdir='sudo rm -rf'
 
 alias hg='history | grep'
 alias ag='alias | grep'
