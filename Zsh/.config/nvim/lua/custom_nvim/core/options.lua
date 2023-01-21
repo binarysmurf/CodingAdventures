@@ -56,3 +56,8 @@ augroup END
 -- automatically format Python on save
 --
 vim.cmd([[autocmd BufWritePre *.py :Yapf]])
+
+-- vim.opt.guifont = { "IosevkaNerdFontComplete-Bold", ":h12" }
+
+
+

@@ -16,7 +16,7 @@ alias ll='exa -l --icons --colour-scale --header'
 alias la='exa -la --icons --colour-scale --header'
 alias lt='lsd -l --total-size --sizesort'
 alias lta='lsd -lA --total-size --sizesort'
-alias ltt='lsd -l --total-size --sizesort | head -n 10'
+alias ltt='lsd -l --total-size --sizesort | head -n 20'
 
 # General QoL
 

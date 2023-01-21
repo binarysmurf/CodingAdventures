@@ -13,10 +13,8 @@ HISTDUP=erase
 setopt appendhistory
 setopt sharehistory
 setopt incappendhistory
-setopt hist_ignore_all_dups
 setopt hist_save_no_dups
-setopt hist_ignore_dups
-setopt hist_find_no_dups
+setopt hist_ignore_all_dups
 
 # Added setting this $TERM env var explicitly to facilitate 'glances' working with tmux
 
@@ -66,4 +64,4 @@ WeeklyUpdate
 [ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
 # eval "$(register-python-argcomplete pipx)"
 eval "$(starship init zsh)"
-# fastfetch --load-config /Users/stevie/Geekery/Github/fastfetch/presets/btw
+colorscript -r
