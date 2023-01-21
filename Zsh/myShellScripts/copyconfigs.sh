@@ -23,4 +23,4 @@ cp ~/.tmux.conf.local ~/Geekery/Github/CodingAdventures/Zsh/myConfigFiles
 
 # Also copy current active shell scripts.
 
-cp ~/.bin/*.sh ~/Geekery/Github/CodingAdventures/Zsh/myShellScripts/
+cp ~/.local/bin/*.sh ~/Geekery/Github/CodingAdventures/Zsh/myShellScripts/

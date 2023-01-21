@@ -38,7 +38,6 @@ export PATH="/usr/local/lib/ruby/gems/3.2.0/bin:$PATH"
 export PATH="$PATH:/Library/Frameworks/Python.framework/Versions/3.11/bin"
 
 # Created by `pipx` on 2022-10-24 02:37:09
-export PATH="$PATH:/Users/stevie/.bin"
 export PATH="$PATH:/Users/stevie/.local/bin"
 
 # Don't ask me what this does. It cleans up your $PATH enviroment variable via some black magic fuckery.
