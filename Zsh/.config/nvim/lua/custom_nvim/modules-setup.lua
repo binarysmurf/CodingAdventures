@@ -40,13 +40,15 @@ return packer.startup(function(use)
     use('Mofiqul/dracula.nvim')
     use("bluz71/vim-moonfly-colors")
     use('sainnhe/everforest')
+
     use {
     'uloco/bluloco.nvim',
     requires = { 'rktjmp/lush.nvim' }
-    }   
+    }
+
+    use('AlexvZyl/nordic.nvim')
     use("shaunsingh/nord.nvim")
 
-    use("Mofiqul/vscode.nvim")
 	use("norcalli/nvim-colorizer.lua")
 	use("frazrepo/vim-rainbow")
 	-- commenting with gc
