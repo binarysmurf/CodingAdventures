@@ -12,8 +12,8 @@ alias oll='/bin/ls -l'
 # alias ll='lsd -l'
 # alias la='lsd -lA'
 alias ls='exa'
-alias ll='exa -l --icons --colour-scale --header'
-alias la='exa -la --icons --colour-scale --header'
+alias ll='exa -l --icons --colour-scale --header --group-directories-first'
+alias la='exa -la --icons --colour-scale --header --group-directories-first'
 alias lt='lsd -l --total-size --sizesort'
 alias lta='lsd -lA --total-size --sizesort'
 alias ltt='lsd -l --total-size --sizesort | head -n 20'
@@ -31,6 +31,8 @@ alias gd='cd ~/Geekery/Github;clear'
 alias pd='cd ~/Geekery/Coding/Python;clear'
 alias ld='cd ~/Geekery/Linux;clear'
 alias gc='git clone'
+alias gp='git pull'
+alias gf'git fetch'
 alias rm=trash
 alias rmdir='sudo rm -rf'
 
@@ -109,15 +111,20 @@ alias pa='pip-autoremove'
 alias ez='${EDITOR} ${ZDOTDIR:-$HOME}/.zshrc' # Edit zsh config
 alias ep='${EDITOR} ${ZDOTDIR:-$HOME}/.zprofile' # Edit .zprofile
 alias ea='${EDITOR} ${ZDOTDIR:-$HOME}/.my_aliases.sh' # Edit personalised aliases
-alias ec='nvim -S nvim_configs.vim'
 alias ef='${EDITOR} ${ZDOTDIR:-$HOME}/.my_functions.sh' # Edit personalised functions
 alias ei='${EDITOR} ${ZDOTDIR:-$HOME}/.config/nvim/init.lua' # Neovim init file.
 alias sz='source ~/.zshrc; clear' # Reload zsh config, which references all of the above .dotfiles
 
-# Find Wifi and hardwired IP.
+# Find Wifi and Internal hardwired IP.
 
-alias wfip='ipconfig getsummary en1 | grep ciaddr'
-alias ethip='ipconfig getsummary en0 | grep ciaddr'
+alias wifi_ip='ipconfig getsummary en1 | grep ciaddr'
+alias eth_ip='ipconfig getsummary en0 | grep ciaddr'
+
+# External IP
+alias my_ip="curl -s http://checkip.dyndns.org/ | sed 's/[a-zA-Z<>/ :]//g'"
+
+# Pretty print the PATH
+alias show_path='echo; tr ":" "\n" <<< "$PATH"; echo;'
 
 # Homebrew.
 
@@ -127,7 +134,7 @@ alias brup='brew update; brew upgrade; brew doctor'
 alias brrm='brew uninstall'
 alias bra='brew autoremove'
 alias bbd='brew bundle dump'
-alias brcl='brew cleanup --prune=all;brew autoremove'
+alias brcl='brew cleanup --prune=all;brew autoremove; brew doctor'
 alias medic='brew doctor'
 
 # Misc.

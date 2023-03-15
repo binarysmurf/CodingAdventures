@@ -25,7 +25,7 @@ mason_lspconfig.setup({
 		"html",
 		"cssls",
 		"pyright",
-		"sumneko_lua",
+		"lua_ls",
         "clangd",
 	},
 	-- auto-install configured servers (with lspconfig)

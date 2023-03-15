@@ -63,3 +63,9 @@ mkd()
     mkdir -p $1
     cd $1
 }
+
+# Let the cow say something
+cow () { cowsay "$1"; echo; }
+
+# Fortune with spaces
+quote () { echo; fortune; echo; }

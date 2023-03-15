@@ -38,7 +38,7 @@ return packer.startup(function(use)
     use("folke/tokyonight.nvim")
 	use("joshdick/onedark.vim")
     use('Mofiqul/dracula.nvim')
-    use("bluz71/vim-moonfly-colors")
+    use("bluz71/vim-moonfly-colors", as == 'moonfly')
     use('sainnhe/everforest')
 
     use {
