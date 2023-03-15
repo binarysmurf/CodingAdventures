@@ -33,6 +33,8 @@ alias ld='cd ~/Geekery/Linux;clear'
 alias gc='git clone'
 alias gp='git pull'
 alias gf'git fetch'
+alias commit='git commit -m'
+alias push='git push'
 alias rm=trash
 alias rmdir='sudo rm -rf'
 
