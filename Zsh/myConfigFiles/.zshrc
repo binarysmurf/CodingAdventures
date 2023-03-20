@@ -62,5 +62,5 @@ source ~/.my_aliases.sh
 [ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
 # eval "$(register-python-argcomplete pipx)"
 eval "$(starship init zsh)"
-fastfetch
 WeeklyUpdate
+fastfetch

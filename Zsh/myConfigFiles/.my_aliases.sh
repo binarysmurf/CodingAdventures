@@ -85,6 +85,8 @@ alias ed='${EDITOR}'
 alias mhdd='sudo mkdir /Volumes/EFI_HDD; sudo mount -t msdos /dev/disk1s1 /Volumes/EFI_HDD'
 alias mssd='sudo mkdir /Volumes/EFI_SSD; sudo mount -t msdos /dev/disk0s1 /Volumes/EFI_SSD'
 
+# My shell scripts.
+
 alias nuke='nuke.sh'
 alias cv="convert2mp4.sh"
 alias rv="repackage2mp4.sh"
@@ -97,8 +99,9 @@ alias gs='google-search.sh'
 alias icat='imgcat.sh'
 alias uv='upscale.sh'
 alias mp='man_preview.sh'
+alias st='smoketest.sh'
 alias ffcl='ffcl.sh'
-alias css='cp ~/.bin/*.sh ~/Geekery/Github/CodingAdventures/Zsh/myShellScripts/'
+
 alias gl='glances -2'
 
 # Python 3.x
